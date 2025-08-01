@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane prefHeight="487.0" prefWidth="756.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.sea_port_simulation.EmergencyAlertViewController">
+   <children>
+      <Label layoutX="332.0" layoutY="30.0" text="Emergency Alert">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="61.0" layoutY="85.0" text="Alert id" />
+      <TextField layoutX="143.0" layoutY="81.0" />
+      <Label layoutX="61.0" layoutY="125.0" text="Alert type" />
+      <ComboBox layoutX="143.0" layoutY="121.0" prefWidth="150.0" promptText="select alert type" />
+      <Label layoutX="61.0" layoutY="166.0" text="Location" />
+      <TextField layoutX="143.0" layoutY="162.0" />
+      <Label layoutX="390.0" layoutY="85.0" text="Description" />
+      <TextArea layoutX="501.0" layoutY="75.0" prefHeight="75.0" prefWidth="200.0" />
+      <ComboBox layoutX="140.0" layoutY="121.0" prefWidth="150.0" promptText="select alert type" />
+      <TextArea layoutX="498.0" layoutY="75.0" prefHeight="75.0" prefWidth="200.0" />
+      <Label layoutX="63.0" layoutY="206.0" text="Status" />
+      <ComboBox layoutX="142.0" layoutY="202.0" prefWidth="150.0" promptText="select alert type" />
+      <Button layoutX="395.0" layoutY="215.0" mnemonicParsing="false" text="Create new Emergency" />
+      <TableView layoutX="43.0" layoutY="266.0" prefHeight="200.0" prefWidth="678.0">
+        <columns>
+          <TableColumn prefWidth="103.1999740600586" text="Alert id" />
+          <TableColumn prefWidth="119.20001220703125" text="Alert Type" />
+            <TableColumn prefWidth="128.0" text="Location" />
+            <TableColumn prefWidth="127.20004272460938" text="Status" />
+            <TableColumn prefWidth="201.5999755859375" text="Description" />
+        </columns>
+      </TableView>
+   </children>
+</AnchorPane>

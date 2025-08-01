@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane prefHeight="561.0" prefWidth="723.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.sea_port_simulation.CargoEfficiencyViewController">
+   <children>
+      <Label layoutX="305.0" layoutY="28.0" text="Cargo Efficiency">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="64.0" layoutY="95.0" text="Efficiency ID" />
+      <TextField layoutX="143.0" layoutY="91.0" />
+      <Label layoutX="62.0" layoutY="135.0" text="ship id" />
+      <ComboBox layoutX="143.0" layoutY="131.0" prefWidth="150.0" />
+      <Label layoutX="64.0" layoutY="173.0" text="Cargo Type" />
+      <ComboBox layoutX="143.0" layoutY="169.0" prefWidth="150.0" />
+      <Label layoutX="372.0" layoutY="95.0" text="start time" />
+      <DatePicker layoutX="489.0" layoutY="91.0" />
+      <Label layoutX="372.0" layoutY="135.0" text="End time" />
+      <DatePicker layoutX="489.0" layoutY="131.0" />
+      <Label layoutX="62.0" layoutY="213.0" text="Delay " />
+      <TextField layoutX="144.0" layoutY="209.0" />
+      <Label layoutX="372.0" layoutY="182.0" text="Delay Reason " />
+      <TextArea layoutX="489.0" layoutY="182.0" prefHeight="92.0" prefWidth="200.0" />
+      <Label layoutX="63.0" layoutY="281.0" text="New Record" />
+      <TableView layoutX="36.0" layoutY="321.0" prefHeight="200.0" prefWidth="649.0">
+        <columns>
+          <TableColumn prefWidth="100.00000762939453" text="efficiency id" />
+          <TableColumn prefWidth="79.20001220703125" text="ship id" />
+            <TableColumn prefWidth="77.60003662109375" text="cargo type" />
+            <TableColumn prefWidth="76.79998779296875" text="delay" />
+            <TableColumn prefWidth="88.79998779296875" text="start time" />
+            <TableColumn prefWidth="94.39993286132812" text="end time" />
+            <TableColumn prefWidth="135.199951171875" text="delay reason" />
+        </columns>
+      </TableView>
+   </children>
+</AnchorPane>
