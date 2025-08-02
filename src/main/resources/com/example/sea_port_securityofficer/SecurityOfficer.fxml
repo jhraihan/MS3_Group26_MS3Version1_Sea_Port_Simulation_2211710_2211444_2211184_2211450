@@ -1,14 +1,63 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import java.lang.*?>
-<?import java.util.*?>
-<?import javafx.scene.*?>
-<?import javafx.scene.control.*?>
-<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Text?>
 
-<AnchorPane xmlns="http://javafx.com/javafx"
-            xmlns:fx="http://javafx.com/fxml"
-            fx:controller="com.example.sea_port_securityofficer.SecurityOfficer"
-            prefHeight="400.0" prefWidth="600.0">
 
+<AnchorPane prefHeight="519.0" prefWidth="646.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.sea_port_securityofficer.SecurityOfficercontroller">
+   <children>
+      <Text layoutX="11.0" layoutY="19.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Port Logbook" />
+      <Text layoutX="25.0" layoutY="44.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Log In" />
+      <Text layoutX="11.0" layoutY="73.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Scan Badge" />
+      <Text layoutX="11.0" layoutY="110.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Cctv Feed" />
+      <Text layoutX="15.0" layoutY="143.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Restricted Zones" />
+      <Text layoutX="14.0" layoutY="171.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Verify Cargo" />
+      <Text layoutX="18.0" layoutY="236.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Security Report" />
+      <Button fx:id="btnAccessLogbook" layoutX="120.0" layoutY="1.0" mnemonicParsing="false" onAction="#handleAccessLogbook" text="Button" />
+      <Button fx:id="btnLogEntryExit" layoutX="120.0" layoutY="27.0" mnemonicParsing="false" onAction="#handleLogEntryExit" text="Button" />
+      <Button fx:id="btnScanBadge" layoutX="120.0" layoutY="56.0" mnemonicParsing="false" onAction="#handleScanBadge" text="Button" />
+      <Button fx:id="btnShowFeed" layoutX="120.0" layoutY="93.0" mnemonicParsing="false" onAction="#handleShowFeed" text="Button" />
+      <Button fx:id="btnSetRestrictions" layoutX="120.0" layoutY="126.0" mnemonicParsing="false" onAction="#handleRestrictions" text="Button" />
+      <Button fx:id="btnValidateCargo" layoutX="120.0" layoutY="154.0" mnemonicParsing="false" onAction="#handleValidateCargo" text="Button" />
+      <Button fx:id="btnGenerateSecurityRpt" layoutX="120.0" layoutY="219.0" mnemonicParsing="false" onAction="#handleGenerateSecurityRpt" text="Button" />
+      <Button fx:id="btnSubmitIncident" layoutX="120.0" layoutY="186.0" mnemonicParsing="false" onAction="#handleSubmitIncident" text="Button" />
+      <Text layoutX="17.0" layoutY="203.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Incident Report" />
+      <TextField fx:id="txtShipId" layoutX="301.0" layoutY="19.0" />
+      <TextField fx:id="txtCrewIds" layoutX="301.0" layoutY="55.0" />
+      <TextField fx:id="txtGateNumber" layoutX="301.0" layoutY="87.0" />
+      <TextField fx:id="txtZoneName" layoutX="301.0" layoutY="117.0" />
+      <TextArea fx:id="incidentDesc" layoutX="301.0" layoutY="146.0" prefHeight="57.0" prefWidth="119.0" />
+      <Text layoutX="204.0" layoutY="36.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Ship Id" />
+      <Text layoutX="202.0" layoutY="65.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Crew Id" />
+      <Text layoutX="197.0" layoutY="97.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Gate Number" />
+      <Text layoutX="197.0" layoutY="123.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Restricted Zones" />
+      <Text layoutX="205.0" layoutY="171.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Incident Area" />
+      <Label fx:id="lblIdentityStatus" layoutX="547.0" layoutY="17.0" text="Identity Status" />
+      <Label fx:id="liveFeedStatus" layoutX="542.0" layoutY="43.0" text="Live Feed Status" />
+      <Label fx:id="txtCargoValidationMsg" layoutX="541.0" layoutY="72.0" text="Cargo validation" />
+      <Text layoutX="501.0" layoutY="32.0" strokeType="OUTSIDE" strokeWidth="0.0" text="label" />
+      <Text layoutX="501.0" layoutY="61.0" strokeType="OUTSIDE" strokeWidth="0.0" text="label" />
+      <Text layoutX="501.0" layoutY="89.0" strokeType="OUTSIDE" strokeWidth="0.0" text="label" />
+      <ComboBox fx:id="cameraLocationBox" layoutX="301.0" layoutY="219.0" prefWidth="150.0" />
+      <Text layoutX="186.0" layoutY="236.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Camera Location Box" />
+      <TableView fx:id="tvSecurityIncidents" layoutX="8.0" layoutY="276.0" prefHeight="200.0" prefWidth="632.0">
+        <columns>
+          <TableColumn fx:id="colTimestamp" prefWidth="88.6666898727417" text="Time Stamp" />
+          <TableColumn fx:id="colShipId" prefWidth="74.6666488647461" text="Ship Id" />
+            <TableColumn fx:id="colCrewIds" prefWidth="73.99993896484375" text="Crew Ids" />
+            <TableColumn fx:id="colGateNumber" prefWidth="64.66676330566406" text="Gate" />
+            <TableColumn fx:id="colEventType" prefWidth="75.0" text="Event Type" />
+            <TableColumn fx:id="colIncidentTime" prefWidth="91.33331298828125" text="Reported Time" />
+            <TableColumn fx:id="colIncidentZone" prefWidth="81.33328247070312" text="Zone" />
+            <TableColumn fx:id="colIncidentDesc" prefWidth="82.66668701171875" text="Description" />
+        </columns>
+      </TableView>
+   </children>
 </AnchorPane>
