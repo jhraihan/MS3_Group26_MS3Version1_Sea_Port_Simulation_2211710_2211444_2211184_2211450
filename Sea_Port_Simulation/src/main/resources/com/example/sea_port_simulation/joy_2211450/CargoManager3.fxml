@@ -1,14 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import java.lang.*?>
-<?import java.util.*?>
-<?import javafx.scene.*?>
-<?import javafx.scene.control.*?>
-<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
 
-<AnchorPane xmlns="http://javafx.com/javafx"
-            xmlns:fx="http://javafx.com/fxml"
-            fx:controller="com.example.sea_port_simulation.joy_2211450.CargoManager3"
-            prefHeight="400.0" prefWidth="600.0">
 
+<AnchorPane prefHeight="462.0" prefWidth="690.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.sea_port_simulation.joy_2211450.CargoManager3">
+   <children>
+      <Label layoutX="234.0" layoutY="28.0" text="Assign Storage Location">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="64.0" layoutY="128.0" text="CargoId" />
+      <TextField fx:id="CargoIdTextField" layoutX="143.0" layoutY="124.0" />
+      <ComboBox fx:id="AvailableSlotsComboBox" layoutX="451.0" layoutY="137.0" prefWidth="150.0" promptText="Available Slots" />
+      <Button fx:id="AssignButton" layoutX="466.0" layoutY="260.0" mnemonicParsing="false" text="Assign" />
+      <Label fx:id="ConfirmationLable" layoutX="159.0" layoutY="298.0" text="Confirmation" />
+   </children>
 </AnchorPane>
