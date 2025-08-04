@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane prefHeight="474.0" prefWidth="676.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.sea_port_simulation.joy_2211450.CargoManager2">
+   <children>
+      <Label layoutX="192.0" layoutY="32.0" prefHeight="35.0" prefWidth="391.0" text="Update Cargo Departure Status">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="42.0" layoutY="162.0" text="CargoId" />
+      <Label layoutX="42.0" layoutY="211.0" text="Departure Time" />
+      <Button fx:id="UpdateButton" layoutX="338.0" layoutY="327.0" mnemonicParsing="false" text="Update" />
+      <ComboBox fx:id="ValidateTimeComboBox" layoutX="405.0" layoutY="137.0" prefWidth="150.0" promptText="Validate Time" />
+      <TextField fx:id="CargoIdTextField" layoutX="109.0" layoutY="158.0" />
+      <TextField fx:id="DepTimeTextField" layoutX="174.0" layoutY="207.0" />
+   </children>
+</AnchorPane>
