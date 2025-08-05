@@ -17,7 +17,7 @@
       </Label>
       <Label layoutX="42.0" layoutY="162.0" text="CargoId" />
       <Label layoutX="42.0" layoutY="211.0" text="Departure Time" />
-      <Button fx:id="UpdateButton" layoutX="338.0" layoutY="327.0" mnemonicParsing="false" text="Update" />
+      <Button layoutX="338.0" layoutY="327.0" mnemonicParsing="false" onAction="#UodateButton" text="Update" />
       <ComboBox fx:id="ValidateTimeComboBox" layoutX="405.0" layoutY="137.0" prefWidth="150.0" promptText="Validate Time" />
       <TextField fx:id="CargoIdTextField" layoutX="109.0" layoutY="158.0" />
       <TextField fx:id="DepTimeTextField" layoutX="174.0" layoutY="207.0" />

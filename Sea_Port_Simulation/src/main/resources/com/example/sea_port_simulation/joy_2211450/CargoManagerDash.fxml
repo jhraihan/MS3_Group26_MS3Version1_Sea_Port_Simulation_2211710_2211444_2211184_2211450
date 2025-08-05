@@ -1,14 +1,62 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import java.lang.*?>
-<?import java.util.*?>
-<?import javafx.scene.*?>
-<?import javafx.scene.control.*?>
-<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
 
-<AnchorPane xmlns="http://javafx.com/javafx"
-            xmlns:fx="http://javafx.com/fxml"
-            fx:controller="com.example.sea_port_simulation.joy_2211450.CargoManagerDash"
-            prefHeight="400.0" prefWidth="600.0">
 
+<AnchorPane prefHeight="400.0" prefWidth="730.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.sea_port_simulation.joy_2211450.CargoManagerDash">
+   <children>
+      <Button layoutX="26.0" layoutY="115.0" mnemonicParsing="false" onAction="#RegisterIncomingCargoButton" text="Register incoming cargo">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+      <Button layoutX="26.0" layoutY="175.0" mnemonicParsing="false" onAction="#UpdateCargoDepartureStatusButton" text="Update cargo departure status">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+      <Button layoutX="29.0" layoutY="246.0" mnemonicParsing="false" onAction="#AssignStorageLocationButton" text="Assign storage location">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+      <Button layoutX="26.0" layoutY="316.0" mnemonicParsing="false" onAction="#TrackCargoMovementButton" text="Track cargo movement">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+      <Button layoutX="437.0" layoutY="115.0" mnemonicParsing="false" onAction="#GenerateStorageReportButton" text="Generate storage report">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+      <Button layoutX="437.0" layoutY="175.0" mnemonicParsing="false" onAction="#NotifyAboutExpiredStorageButton" text="Notify about expired storage">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+      <Button layoutX="436.0" layoutY="246.0" mnemonicParsing="false" onAction="#ScheduleUnloadingTaskButton" text="Schedule unloading task">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+      <Button layoutX="437.0" layoutY="323.0" mnemonicParsing="false" onAction="#MarkCargoAsLostAndDamageButton" text="Mark cargo as lost/damaged">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+      <Button layoutX="614.0" layoutY="21.0" mnemonicParsing="false" onAction="#LogoutButton" text="Logout">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+      <Label layoutX="117.0" layoutY="14.0" prefHeight="54.0" prefWidth="445.0" text="Cargo ManagerDashBoard">
+         <font>
+            <Font size="36.0" />
+         </font>
+      </Label>
+   </children>
 </AnchorPane>
