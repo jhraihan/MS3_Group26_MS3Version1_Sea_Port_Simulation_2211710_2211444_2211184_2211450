@@ -1,14 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import java.lang.*?>
-<?import java.util.*?>
-<?import javafx.scene.*?>
-<?import javafx.scene.control.*?>
-<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
 
-<AnchorPane xmlns="http://javafx.com/javafx"
-            xmlns:fx="http://javafx.com/fxml"
-            fx:controller="com.example.sea_port_simulation.joy_2211450.CustomClearanceOfficer8"
-            prefHeight="400.0" prefWidth="600.0">
 
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.sea_port_simulation.joy_2211450.CustomClearanceOfficer8">
+   <children>
+      <Label layoutX="187.0" layoutY="14.0" prefHeight="35.0" prefWidth="202.0" text="Revoke clearance">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="48.0" layoutY="122.0" text="CargoId" />
+      <TextField fx:id="CargoIdTextField" layoutX="132.0" layoutY="118.0" />
+      <Button layoutX="373.0" layoutY="166.0" mnemonicParsing="false" onAction="#ValidateIdButton" text="ValidateId" />
+      <Button layoutX="282.0" layoutY="200.0" mnemonicParsing="false" onAction="#CheckClearanceHHistoryButton" text="Check Clearance History" />
+      <Button layoutX="400.0" layoutY="267.0" mnemonicParsing="false" onAction="#RevokeClearanceButton" text="Revoke Clearance" />
+      <Button layoutX="187.0" layoutY="280.0" mnemonicParsing="false" onAction="#NotifyPartiesButton" text="Notify Parties" />
+   </children>
 </AnchorPane>
