@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.chart.CategoryAxis?>
+<?import javafx.scene.chart.LineChart?>
+<?import javafx.scene.chart.NumberAxis?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Text?>
+
+
+<AnchorPane prefHeight="519.0" prefWidth="663.0" xmlns="http://javafx.com/javafx/24.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.sea_port_simulation.RevenueAnalyticscontroller">
+   <children>
+      <ComboBox fx:id="comboMonth" layoutX="133.0" layoutY="23.0" prefWidth="150.0" />
+      <Text layoutX="62.0" layoutY="41.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Month" />
+      <ComboBox fx:id="comboCategory" layoutX="133.0" layoutY="58.0" prefWidth="150.0" />
+      <Text layoutX="62.0" layoutY="76.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Category" />
+      <Button layoutX="174.0" layoutY="107.0" mnemonicParsing="false" onAction="#handleGenerateChart" text="Button" />
+      <Text layoutX="69.0" layoutY="124.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Generate Chart" />
+      <LineChart fx:id="chartRevenue" layoutX="22.0" layoutY="131.0">
+        <xAxis>
+          <CategoryAxis side="BOTTOM" />
+        </xAxis>
+        <yAxis>
+          <NumberAxis side="LEFT" />
+        </yAxis>
+      </LineChart>
+      <Label fx:id="lblRevenueSummary" layoutX="435.0" layoutY="27.0" text="Revenue Summary" />
+   </children>
+</AnchorPane>
