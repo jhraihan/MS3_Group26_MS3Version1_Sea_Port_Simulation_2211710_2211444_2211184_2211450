@@ -1,6 +1,6 @@
 package com.example.sea_port_simulation;
 
-public class ManualPaymentAcc
+public class ManualPaymentAcccontroller
 {
     @javafx.fxml.FXML
     private TextField txtTransactionId;
