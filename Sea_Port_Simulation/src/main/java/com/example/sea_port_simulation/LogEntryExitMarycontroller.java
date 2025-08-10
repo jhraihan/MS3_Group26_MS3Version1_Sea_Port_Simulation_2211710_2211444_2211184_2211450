@@ -1,9 +1,6 @@
-package com.example.sea_port_simulation.Mary2211184;
+package com.example.sea_port_simulation;
 
-import javafx.event.ActionEvent;
-import javafx.scene.control.TextField;
-
-public class LogEntryExitcontroller
+public class LogEntryExitMarycontroller
 {
     @javafx.fxml.FXML
     private TextField txtShipName;
@@ -11,6 +8,8 @@ public class LogEntryExitcontroller
     private TextField txtCrewId;
     @javafx.fxml.FXML
     private TextField txtGateNumber;
+    @javafx.fxml.FXML
+    private Label lblStatusMessage;
 
     @javafx.fxml.FXML
     public void initialize() {

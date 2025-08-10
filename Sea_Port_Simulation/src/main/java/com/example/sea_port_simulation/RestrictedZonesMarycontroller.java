@@ -1,6 +1,6 @@
-package com.example.sea_port_simulation.Mary2211184;
+package com.example.sea_port_simulation;
 
-public class RestrictedZonescontroller
+public class RestrictedZonesMarycontroller
 {
     @javafx.fxml.FXML
     private ComboBox comboAccessLevel;

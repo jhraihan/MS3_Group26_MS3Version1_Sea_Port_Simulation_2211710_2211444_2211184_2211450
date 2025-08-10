@@ -1,13 +1,11 @@
-package com.example.sea_port_simulation.Mary2211184;
+package com.example.sea_port_simulation;
 
-public class DailyReportcontroller
+public class DailySecurityReportMarycontroller
 {
     @javafx.fxml.FXML
     private Label lblReportStatus;
     @javafx.fxml.FXML
     private TextField txtIncidentSummary;
-    @javafx.fxml.FXML
-    private Label lblR;
 
     @javafx.fxml.FXML
     public void initialize() {

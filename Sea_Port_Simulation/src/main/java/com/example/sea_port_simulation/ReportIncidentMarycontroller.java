@@ -1,6 +1,6 @@
-package com.example.sea_port_simulation.Mary2211184;
+package com.example.sea_port_simulation;
 
-public class ReportIncidentcontroller
+public class ReportIncidentMarycontroller
 {
     @javafx.fxml.FXML
     private TextField txtIncidentDesc;

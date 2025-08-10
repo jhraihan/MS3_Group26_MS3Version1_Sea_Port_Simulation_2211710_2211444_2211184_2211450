@@ -1,6 +1,6 @@
-package com.example.sea_port_simulation.Mary2211184;
+package com.example.sea_port_simulation;
 
-public class MonitorCCTVcontroller
+public class MonitorCCTVMarycontroller
 {
     @javafx.fxml.FXML
     private Label lblLiveStatus;
@@ -12,6 +12,6 @@ public class MonitorCCTVcontroller
     }
 
     @javafx.fxml.FXML
-    public void handleViewLive(ActionEvent actionEvent) {
+    public void btnViewLive(ActionEvent actionEvent) {
     }
 }

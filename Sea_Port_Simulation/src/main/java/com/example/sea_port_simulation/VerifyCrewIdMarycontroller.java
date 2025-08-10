@@ -1,11 +1,11 @@
-package com.example.sea_port_simulation.Mary2211184;
+package com.example.sea_port_simulation;
 
-public class VerifyCrewIdcontroller
+public class VerifyCrewIdMarycontroller
 {
     @javafx.fxml.FXML
-    private Label lblAccessResult;
-    @javafx.fxml.FXML
     private TextField txtCrewBadgeId;
+    @javafx.fxml.FXML
+    private Label lblAccessStatus;
     @javafx.fxml.FXML
     private Label lblScanResult;
 

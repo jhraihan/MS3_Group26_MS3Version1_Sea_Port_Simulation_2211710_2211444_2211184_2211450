@@ -1,6 +1,6 @@
-package com.example.sea_port_simulation.Mary2211184;
+package com.example.sea_port_simulation;
 
-public class CargoVerificationcontroller
+public class CargoVerificationMarycontroller
 {
     @javafx.fxml.FXML
     private Label lblValidationResult;
