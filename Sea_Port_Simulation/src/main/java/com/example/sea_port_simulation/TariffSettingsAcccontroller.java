@@ -1,6 +1,6 @@
 package com.example.sea_port_simulation;
 
-public class TariffSettingscontroller
+public class TariffSettingsAcccontroller
 {
     @javafx.fxml.FXML
     private Button handleSaveRates;

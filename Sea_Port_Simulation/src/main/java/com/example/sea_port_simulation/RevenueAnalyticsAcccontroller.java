@@ -1,6 +1,6 @@
 package com.example.sea_port_simulation;
 
-public class RevenueAnalyticscontroller
+public class RevenueAnalyticsAcccontroller
 {
     @javafx.fxml.FXML
     private ComboBox comboMonth;

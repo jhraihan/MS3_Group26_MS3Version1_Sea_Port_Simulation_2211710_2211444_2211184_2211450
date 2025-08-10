@@ -10,7 +10,7 @@
 <?import javafx.scene.text.Text?>
 
 
-<AnchorPane prefHeight="519.0" prefWidth="663.0" xmlns="http://javafx.com/javafx/24.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.sea_port_simulation.RevenueAnalyticscontroller">
+<AnchorPane prefHeight="519.0" prefWidth="663.0" xmlns="http://javafx.com/javafx/24.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.sea_port_simulation.RevenueAnalyticsAcccontroller">
    <children>
       <ComboBox fx:id="comboMonth" layoutX="133.0" layoutY="23.0" prefWidth="150.0" />
       <Text layoutX="62.0" layoutY="41.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Month" />

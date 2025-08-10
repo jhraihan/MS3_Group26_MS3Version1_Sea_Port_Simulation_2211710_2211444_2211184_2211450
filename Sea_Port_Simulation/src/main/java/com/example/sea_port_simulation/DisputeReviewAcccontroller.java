@@ -1,6 +1,6 @@
 package com.example.sea_port_simulation;
 
-public class DisputeReviewcontroller
+public class DisputeReviewAcccontroller
 {
     @javafx.fxml.FXML
     private TableView tvTableDisputes;
