@@ -3,19 +3,20 @@ package com.example.sea_port_simulation.joy_2211450;
 import javafx.event.ActionEvent;
 import javafx.scene.control.*;
 
+
 public class CargoManager8 {
     @javafx.fxml.FXML
-    private TableColumn EnterRemarkCol;
+    private TableColumn<CargoManager8,String> EnterRemarkCol;
     @javafx.fxml.FXML
-    private TableColumn CargoIdCol;
+    private TableColumn <CargoManager8,String>CargoIdCol;
     @javafx.fxml.FXML
-    private TableColumn StatusCol;
+    private TableColumn <CargoManager8,String> StatusCol;
     @javafx.fxml.FXML
     private TextField CargoIdTextField;
     @javafx.fxml.FXML
-    private TableView TableView;
+    private TableView <CargoManager8>TableView;
     @javafx.fxml.FXML
-    private ChoiceBox StatusChoiceBox;
+    private ChoiceBox <CargoManager8,String>StatusChoiceBox;
     @javafx.fxml.FXML
     private TextArea EnterRemarkTextArea;
 
