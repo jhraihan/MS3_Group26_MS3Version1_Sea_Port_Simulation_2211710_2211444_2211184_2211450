@@ -10,10 +10,28 @@ public class CargoManager2 {
     private TextField DepTimeTextField;
     @javafx.fxml.FXML
     private TextField CargoIdTextField;
-    @javafx.fxml.FXML
-    private ComboBox ValidateTimeComboBox;
+
+
 
     @javafx.fxml.FXML
-    public void UodateButton(ActionEvent actionEvent) {
+    public void departureButton(ActionEvent actionEvent) {
+        String cargoId = CargoIdTextField.getText();
+        String departureTime = DepTimeTextField.getText();
+
     }
+
+    @javafx.fxml.FXML
+    public void NotifyClientButton(ActionEvent actionEvent) {
+        String cargoId = CargoIdTextField.getText();
+        String departureTime = DepTimeTextField.getText();
+        if (cargoId.isEmpty() || departureTime.isEmpty()) {
+            NotifyClientButton().setText("error");
+               return;
+        }
+        CargoManager2Model newCargo = new CargoManager2Model(cargoId, departureTime);
+        NotifyClientButton().setText("successfully!");
+
+
+    }
+
 }

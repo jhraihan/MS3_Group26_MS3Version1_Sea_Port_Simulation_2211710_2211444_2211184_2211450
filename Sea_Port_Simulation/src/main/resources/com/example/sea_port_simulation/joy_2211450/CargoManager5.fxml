@@ -1,28 +1,40 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
 <?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
 <?import javafx.scene.control.TextArea?>
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-
-<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.sea_port_simulation.joy_2211450.CargoManager5">
+<AnchorPane prefHeight="627.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.sea_port_simulation.joy_2211450.CargoManager5">
    <children>
       <Label layoutX="177.0" layoutY="24.0" text="Generate Storage Report">
          <font>
             <Font size="18.0" />
          </font>
       </Label>
-      <TextField fx:id="ReportTextField" layoutX="102.0" layoutY="151.0" />
-      <Button layoutX="389.0" layoutY="282.0" mnemonicParsing="false" onAction="#SaveReportButton" text="Save Report" />
+      <Button layoutX="36.0" layoutY="578.0" mnemonicParsing="false" onAction="#SaveReportButton" text="Save Report" />
       <Label layoutX="32.0" layoutY="155.0" />
       <Label layoutX="32.0" layoutY="106.0" text="CargoId" />
-      <Label layoutX="18.0" layoutY="228.0" text="Location" />
-      <TextArea fx:id="LocationTextArea" layoutX="102.0" layoutY="206.0" prefHeight="53.0" prefWidth="200.0" />
+      <Label layoutX="30.0" layoutY="228.0" text="Location" />
+      <TextArea fx:id="LocationTextArea" layoutX="112.0" layoutY="201.0" prefHeight="53.0" prefWidth="200.0" />
       <TextField fx:id="CargoIdTextField" layoutX="102.0" layoutY="102.0" />
-      <Text layoutX="42.0" layoutY="168.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Report" />
+      <Text layoutX="41.0" layoutY="168.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Date" />
+      <Button layoutX="461.0" layoutY="565.0" mnemonicParsing="false" text="Generate Report" />
+      <TableView fx:id="TableView" layoutX="42.0" layoutY="345.0" prefHeight="200.0" prefWidth="482.0">
+        <columns>
+          <TableColumn fx:id="CargoIdCol" prefWidth="112.800048828125" text="CargoId" />
+          <TableColumn fx:id="LocationCol" prefWidth="91.199951171875" text="Location" />
+            <TableColumn fx:id="DateCol" prefWidth="136.79998779296875" text="Date" />
+            <TableColumn fx:id="StatusCol" prefWidth="141.5999755859375" text="Status" />
+        </columns>
+      </TableView>
+      <DatePicker fx:id="DateD" layoutX="102.0" layoutY="151.0" />
+      <Button layoutX="489.0" layoutY="224.0" mnemonicParsing="false" onAction="#Statusbutton" text="Status" />
    </children>
 </AnchorPane>

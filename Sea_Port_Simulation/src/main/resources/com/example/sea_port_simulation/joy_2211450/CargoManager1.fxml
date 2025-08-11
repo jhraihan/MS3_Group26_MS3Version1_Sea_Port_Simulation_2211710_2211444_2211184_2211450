@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <?import javafx.scene.control.Button?>
-<?import javafx.scene.control.ComboBox?>
 <?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-
-<AnchorPane prefHeight="382.0" prefWidth="584.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.sea_port_simulation.joy_2211450.CargoManager1">
+<AnchorPane prefHeight="538.0" prefWidth="584.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.sea_port_simulation.joy_2211450.CargoManager1">
    <children>
       <Label layoutX="182.0" layoutY="35.0" prefHeight="30.0" prefWidth="219.0" text="Register incoming cargo">
          <font>
@@ -17,10 +17,15 @@
       </Label>
       <Label layoutX="43.0" layoutY="123.0" text="CargoId" />
       <Label layoutX="43.0" layoutY="193.0" text="CargoType" />
-      <Label fx:id="ConfiramationMessageLable" layoutX="114.0" layoutY="320.0" prefHeight="18.0" prefWidth="164.0" text="Confiramation Message" />
+      <Label fx:id="ConfiramationMessageLable" layoutX="335.0" layoutY="483.0" prefHeight="18.0" prefWidth="164.0" text="Confiramation Message" />
       <TextField fx:id="CargoIdTextField" layoutX="114.0" layoutY="119.0" />
       <TextField fx:id="CargoTypeTextField" layoutX="114.0" layoutY="189.0" />
-      <Button layoutX="429.0" layoutY="294.0" mnemonicParsing="false" text="Submit" />
-      <ComboBox fx:id="ValidateComboBox" layoutX="381.0" layoutY="164.0" prefWidth="150.0" promptText="Validate" />
+      <Button layoutX="445.0" layoutY="211.0" mnemonicParsing="false" onAction="#SubmitButton" text="Submit" />
+      <TableView fx:id="TableView" layoutX="24.0" layoutY="269.0" prefHeight="200.0" prefWidth="536.0">
+        <columns>
+          <TableColumn fx:id="CargoIdCol" prefWidth="248.79998779296875" text="Cargo Id" />
+          <TableColumn fx:id="CargoTypeCol" prefWidth="286.4000244140625" text="Cargo Type" />
+        </columns>
+      </TableView>
    </children>
 </AnchorPane>

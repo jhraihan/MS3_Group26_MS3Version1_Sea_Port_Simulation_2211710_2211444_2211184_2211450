@@ -11,17 +11,19 @@ public class CargoManager8 {
     @javafx.fxml.FXML
     private TableColumn StatusCol;
     @javafx.fxml.FXML
-    private ChoiceBox StatusChoicBox;
-    @javafx.fxml.FXML
-    private Label ConfirmedLable;
-    @javafx.fxml.FXML
     private TextField CargoIdTextField;
     @javafx.fxml.FXML
-    private TableColumn ConfirmedCol;
-    @javafx.fxml.FXML
     private TableView TableView;
+    @javafx.fxml.FXML
+    private ChoiceBox StatusChoiceBox;
+    @javafx.fxml.FXML
+    private TextArea EnterRemarkTextArea;
+
+    @Deprecated
+    public void EnterRemarkButton(ActionEvent actionEvent) {
+    }
 
     @javafx.fxml.FXML
-    public void EnterRemarkButton(ActionEvent actionEvent) {
+    public void UpdateButton(ActionEvent actionEvent) {
     }
 }

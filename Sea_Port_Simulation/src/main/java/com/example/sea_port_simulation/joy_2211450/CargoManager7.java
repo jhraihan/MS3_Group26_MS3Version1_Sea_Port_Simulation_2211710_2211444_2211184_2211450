@@ -5,27 +5,39 @@ import javafx.scene.control.*;
 
 public class CargoManager7 {
     @javafx.fxml.FXML
-    private TableColumn<TableView,String> CargoIdCol;
-    @javafx.fxml.FXML
-    private TableColumn<TableView,String>ValidateCol;
-    @javafx.fxml.FXML
-    private TableColumn ConfirmedNofiCol;
-    @javafx.fxml.FXML
-    private TextField ExpiredTimeTextField;
-    @javafx.fxml.FXML
-    private TableColumn ExpiredTimeCol;
-    @javafx.fxml.FXML
-    private Label ConfirmedLable;
+    private TableColumn<CargoManager7,String> CargoIdCol;
     @javafx.fxml.FXML
     private TextField CargoIdTextField;
     @javafx.fxml.FXML
-    private ComboBox ValidateTimeComboBox;
+    private ComboBox<String> ValidateTimeComboBox;
     @javafx.fxml.FXML
-    private TableColumn ScheduleCol;
+    private TableView<CargoManager7> TableView;
     @javafx.fxml.FXML
-    private TableView TableView;
+    private TableColumn <CargoManager7,String>ValidateTimeCol;
+    @javafx.fxml.FXML
+    private TableColumn<CargoManager7,String> StatusCol;
+    @javafx.fxml.FXML
+    private TableColumn<CargoManager7,String> ExpectedTimeCol;
+    @javafx.fxml.FXML
+    private TextField StatusTextField;
+    @javafx.fxml.FXML
+    private TextField ExpectedTimeTextField;
+    @javafx.fxml.FXML
+    private TableColumn <CargoManager7,String>LocationCol;
+
+    @Deprecated
+    public void ScheduleButton(ActionEvent actionEvent) {
+    }
 
     @javafx.fxml.FXML
-    public void ScheduleButton(ActionEvent actionEvent) {
+    public void CheckAvailabilityButton(ActionEvent actionEvent) {
+    }
+
+    @javafx.fxml.FXML
+    public void ConfirmScheduleButton(ActionEvent actionEvent) {
+    }
+
+    @javafx.fxml.FXML
+    public void NotifyUnloadingTeamButton(ActionEvent actionEvent) {
     }
 }

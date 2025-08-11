@@ -3,9 +3,11 @@ package com.example.sea_port_simulation.joy_2211450;
 import javafx.event.ActionEvent;
 import javafx.scene.control.*;
 
+import java.time.LocalDate;
+
 public class CargoManager6 {
     @javafx.fxml.FXML
-    private TableColumn CargoIdCol;
+    private TableColumn <CargoManager6,String>CargoIdCol;
     @javafx.fxml.FXML
     private TextField ExpiredListTextField;
     @javafx.fxml.FXML
@@ -13,13 +15,11 @@ public class CargoManager6 {
     @javafx.fxml.FXML
     private DatePicker DateD;
     @javafx.fxml.FXML
-    private TableColumn DateCol;
+    private TableColumn <CargoManager6, LocalDate>DateCol;
     @javafx.fxml.FXML
-    private TableView TableView;
+    private TableView <CargoManager6>TableView;
     @javafx.fxml.FXML
-    private TableColumn ExpiredListCol;
-    @javafx.fxml.FXML
-    private TableColumn ExpiryListCol;
+    private TableColumn <CargoManager6,String>ExpiryListCol;
 
     @javafx.fxml.FXML
     public void UpdateStatusButton(ActionEvent actionEvent) {

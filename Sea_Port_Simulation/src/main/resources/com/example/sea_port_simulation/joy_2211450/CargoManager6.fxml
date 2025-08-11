@@ -9,7 +9,6 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-
 <AnchorPane prefHeight="531.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.sea_port_simulation.joy_2211450.CargoManager6">
    <children>
       <Label layoutX="194.0" layoutY="25.0" text="Notify About Expired Storage">
@@ -24,16 +23,15 @@
       <TextField fx:id="CargoIdTextField" layoutX="108.0" layoutY="104.0" />
       <Label layoutX="32.0" layoutY="175.0" text="Expiry List" />
       <TextField fx:id="ExpiredListTextField" layoutX="108.0" layoutY="171.0" />
-      <TableView fx:id="TableView" layoutX="79.0" layoutY="317.0" prefHeight="200.0" prefWidth="481.0">
+      <TableView fx:id="TableView" layoutX="70.0" layoutY="266.0" prefHeight="200.0" prefWidth="481.0">
         <columns>
-          <TableColumn fx:id="CargoIdCol" prefWidth="102.39996337890625" text="CargoId" />
-          <TableColumn fx:id="ExpiredListCol" prefWidth="111.199951171875" text="ExpiredList" />
-            <TableColumn fx:id="DateCol" prefWidth="119.20001220703125" text="Date" />
-            <TableColumn fx:id="ExpiryListCol" prefWidth="148.7999267578125" text="Expiry List" />
+          <TableColumn fx:id="CargoIdCol" prefWidth="126.4000244140625" text="CargoId" />
+            <TableColumn fx:id="DateCol" prefWidth="149.5999755859375" text="Date" />
+            <TableColumn fx:id="ExpiryListCol" prefWidth="204.79998779296875" text="Expiry List" />
         </columns>
       </TableView>
-      <Button layoutX="376.0" layoutY="193.0" mnemonicParsing="false" onAction="#ExpiryCheckButton" text="Expiry Check" />
-      <Button layoutX="395.0" layoutY="253.0" mnemonicParsing="false" onAction="#UpdateStatusButton" text="Update Status" />
-      <Button layoutX="120.0" layoutY="253.0" mnemonicParsing="false" onAction="#NotifyStakeholderButton" text="Notify Stakeholder" />
+      <Button layoutX="486.0" layoutY="482.0" mnemonicParsing="false" onAction="#ExpiryCheckButton" text="Expiry Check" />
+      <Button layoutX="468.0" layoutY="206.0" mnemonicParsing="false" onAction="#UpdateStatusButton" text="Update Status" />
+      <Button layoutX="32.0" layoutY="482.0" mnemonicParsing="false" onAction="#NotifyStakeholderButton" text="Notify Stakeholder" />
    </children>
 </AnchorPane>
