@@ -1,5 +1,9 @@
 package com.example.sea_port_simulation;
 
+import javafx.event.ActionEvent;
+import javafx.scene.control.Label;
+import javafx.scene.control.TextField;
+
 public class LogEntryExitMarycontroller
 {
     @javafx.fxml.FXML
