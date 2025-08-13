@@ -45,4 +45,3 @@ public class CargoVerificationMarycontroller
         colManifest.wait();
     }
     }
-}
