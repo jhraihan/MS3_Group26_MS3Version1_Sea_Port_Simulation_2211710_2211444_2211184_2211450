@@ -1,8 +1,12 @@
 package com.example.sea_port_simulation;
 
 import javafx.event.ActionEvent;
+import javafx.fxml.FXML;
 import javafx.scene.control.Label;
+import javafx.scene.control.TableColumn;
+import javafx.scene.control.TableView;
 import javafx.scene.control.TextField;
+import javafx.scene.control.cell.PropertyValueFactory;
 
 public class LogEntryExitMarycontroller
 {
@@ -15,8 +19,16 @@ public class LogEntryExitMarycontroller
     @javafx.fxml.FXML
     private Label lblStatusMessage;
 
+    @FXML private TableView<LogInEntryExitMary> logTable;
+    @FXML private TableColumn<LogInEntryExitMary, String> colShipName;
+    @FXML private TableColumn<LogInEntryExitMary, String> colCrewId;
+    @FXML private TableColumn<LogInEntryExitMary, String> colGateNumber;
+
     @javafx.fxml.FXML
     public void initialize() {
+        colShipName.setCellValueFactory(new PropertyValueFactory<>("shipId"));
+        colCrewId.setCellValueFactory(new PropertyValueFactory<>("crewId"));
+        colGateNumber.setCellValueFactory(new PropertyValueFactory<>("gateNumber"));
     }
 
     @javafx.fxml.FXML

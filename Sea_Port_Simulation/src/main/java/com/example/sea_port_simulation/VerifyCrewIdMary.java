@@ -4,6 +4,7 @@ import javafx.beans.property.BooleanProperty;
 import javafx.beans.property.SimpleBooleanProperty;
 import javafx.beans.property.SimpleStringProperty;
 import javafx.beans.property.StringProperty;
+import javafx.collections.ObservableList;
 
 public class VerifyCrewIdMary {
     private String badgeId;
@@ -16,6 +17,10 @@ public class VerifyCrewIdMary {
         this.crewId = crewId;
         this.accessZone = accessZone;
         this.authorized = authorized;
+    }
+
+    public static ObservableList<VerifyCrewIdMary> getDummyScan() {
+        return null;
     }
 
     public String getBadgeId() {
