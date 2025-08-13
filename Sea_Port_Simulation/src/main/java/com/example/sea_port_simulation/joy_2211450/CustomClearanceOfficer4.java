@@ -12,8 +12,18 @@ public class CustomClearanceOfficer4 {
     private Label NotificationLable;
     @javafx.fxml.FXML
     private TextField CargoIdTextField;
+    @javafx.fxml.FXML
+    private TextField OfficerIdTextField;
 
     @javafx.fxml.FXML
     public void HoldButton(ActionEvent actionEvent) {
+    }
+
+    @javafx.fxml.FXML
+    public void ReqDocsButton(ActionEvent actionEvent) {
+    }
+
+    @javafx.fxml.FXML
+    public void ReleaseButton(ActionEvent actionEvent) {
     }
 }

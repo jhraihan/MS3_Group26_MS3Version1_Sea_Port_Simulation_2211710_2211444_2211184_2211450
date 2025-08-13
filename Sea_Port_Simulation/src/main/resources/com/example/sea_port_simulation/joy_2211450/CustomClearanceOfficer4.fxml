@@ -7,7 +7,6 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-
 <AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.sea_port_simulation.joy_2211450.CustomClearanceOfficer4">
    <children>
       <Label layoutX="125.0" layoutY="23.0" />
@@ -20,7 +19,11 @@
       <Label layoutX="42.0" layoutY="170.0" text="Reason" />
       <TextField fx:id="CargoIdTextField" layoutX="125.0" layoutY="110.0" />
       <TextArea fx:id="ResonTextArea" layoutX="125.0" layoutY="152.0" prefHeight="72.0" prefWidth="200.0" />
-      <Button layoutX="437.0" layoutY="224.0" mnemonicParsing="false" onAction="#HoldButton" text="Hold" />
-      <Label fx:id="NotificationLable" layoutX="67.0" layoutY="281.0" text="Notification" />
+      <Button layoutX="508.0" layoutY="330.0" mnemonicParsing="false" onAction="#HoldButton" text="Hold" />
+      <Label fx:id="NotificationLable" layoutX="324.0" layoutY="360.0" text="Notification" />
+      <TextField fx:id="OfficerIdTextField" layoutX="425.0" layoutY="101.0" />
+      <Label layoutX="335.0" layoutY="105.0" text="OfficerId" />
+      <Button layoutX="33.0" layoutY="343.0" mnemonicParsing="false" onAction="#ReleaseButton" text="Release" />
+      <Button layoutX="468.0" layoutY="211.0" mnemonicParsing="false" onAction="#ReqDocsButton" text="ReqDocs" />
    </children>
 </AnchorPane>

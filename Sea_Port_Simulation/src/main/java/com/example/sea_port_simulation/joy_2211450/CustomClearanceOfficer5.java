@@ -3,13 +3,15 @@ package com.example.sea_port_simulation.joy_2211450;
 import javafx.event.ActionEvent;
 import javafx.scene.control.*;
 
+import java.time.LocalDate;
+
 public class CustomClearanceOfficer5 {
     @javafx.fxml.FXML
-    private TableColumn CargoIdCol;
+    private TableColumn <CustomClearanceOfficer5,String>CargoIdCol;
     @javafx.fxml.FXML
-    private TableColumn StatusCol;
+    private TableColumn <CustomClearanceOfficer5,String>StatusCol;
     @javafx.fxml.FXML
-    private TableColumn ClientNameCol;
+    private TableColumn <CustomClearanceOfficer5,String>ClientNameCol;
     @javafx.fxml.FXML
     private TextField CargoIdTextField;
     @javafx.fxml.FXML
@@ -19,9 +21,9 @@ public class CustomClearanceOfficer5 {
     @javafx.fxml.FXML
     private TextField ClientNameTextField;
     @javafx.fxml.FXML
-    private TableColumn DateCol;
+    private TableColumn <CustomClearanceOfficer5, LocalDate>DateCol;
     @javafx.fxml.FXML
-    private TableView TableView;
+    private TableView <CustomClearanceOfficer5>TableView;
 
     @javafx.fxml.FXML
     public void GenerateSummaryButton(ActionEvent actionEvent) {

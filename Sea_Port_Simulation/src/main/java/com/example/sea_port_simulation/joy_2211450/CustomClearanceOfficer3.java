@@ -6,13 +6,33 @@ import javafx.scene.control.TextField;
 
 public class CustomClearanceOfficer3 {
     @javafx.fxml.FXML
-    private Label ClearanceTimeLable;
-    @javafx.fxml.FXML
-    private Label NotificationLable;
-    @javafx.fxml.FXML
     private TextField EnterCargoIdTextField;
+    @javafx.fxml.FXML
+    private TextField OfficerIdTextField;
+    @javafx.fxml.FXML
+    private TextField TaxPaidNoTextField;
+    @javafx.fxml.FXML
+    private TextField HsCodeTextField;
+    @javafx.fxml.FXML
+    private TextField CustomEntryNumTextField;
+    @javafx.fxml.FXML
+    private TextField ImporterNameTextField;
+    @javafx.fxml.FXML
+    private TextField ExporterNameTextField;
 
     @javafx.fxml.FXML
     public void ApproveClearanceButton(ActionEvent actionEvent) {
+    }
+
+    @javafx.fxml.FXML
+    public void RequestDocs(ActionEvent actionEvent) {
+    }
+
+    @javafx.fxml.FXML
+    public void NotifyButton(ActionEvent actionEvent) {
+    }
+
+    @javafx.fxml.FXML
+    public void RejectButton(ActionEvent actionEvent) {
     }
 }
