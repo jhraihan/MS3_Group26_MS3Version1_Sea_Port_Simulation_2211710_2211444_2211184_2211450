@@ -8,7 +8,7 @@
 <?import javafx.scene.text.Text?>
 
 
-<AnchorPane prefHeight="227.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/24.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.sea_port_simulation.CheckWeather">
+<AnchorPane prefHeight="227.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/24.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.sea_port_simulation.Nasir.CheckWeatherController">
    <children>
       <Text layoutX="266.0" layoutY="44.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Weather">
          <font>
