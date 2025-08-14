@@ -57,12 +57,6 @@ public class DisputeReviewAcc {
 
     @Override
     public String toString() {
-        return "DisputeReviewAcc{" +
-                "disputeId='" + disputeId + '\'' +
-                ", transactionId='" + transactionId + '\'' +
-                ", reason='" + reason + '\'' +
-                ", status='" + status + '\'' +
-                ", accountantComment='" + accountantComment + '\'' +
-                '}';
+        return STR."DisputeReviewAcc{disputeId='\{disputeId}', transactionId='\{transactionId}', reason='\{reason}', status='\{status}', accountantComment='\{accountantComment}'}";
     }
 }
