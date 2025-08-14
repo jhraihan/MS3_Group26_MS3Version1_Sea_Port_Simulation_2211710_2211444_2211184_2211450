@@ -9,6 +9,8 @@ module com.example.sea_port_simulation {
     opens com.example.sea_port_simulation.joy_2211450 to javafx.fxml;
     exports com.example.sea_port_simulation.Nasir;
     opens com.example.sea_port_simulation.Nasir to javafx.fxml;
+    exports com.example.sea_port_simulation.jahid_2211710;
+    opens com.example.sea_port_simulation.jahid_2211710 to javafx.fxml;
 
 
 }

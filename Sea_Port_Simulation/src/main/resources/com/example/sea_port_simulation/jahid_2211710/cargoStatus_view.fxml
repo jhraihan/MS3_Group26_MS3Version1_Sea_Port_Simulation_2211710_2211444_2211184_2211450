@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane prefHeight="505.0" prefWidth="766.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.sea_port_simulation.jahid_2211710.CargoStatusViewController">
+   <children>
+      <Label layoutX="349.0" layoutY="27.0" text="Cargo Status">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="61.0" layoutY="84.0" text="Ship ID" />
+      <TextField layoutX="186.0" layoutY="80.0" />
+      <Label layoutX="61.0" layoutY="125.0" text="Ship Name" />
+      <TextField layoutX="186.0" layoutY="121.0" />
+      <Label layoutX="61.0" layoutY="163.0" text="Current Dock Location" />
+      <TextField layoutX="186.0" layoutY="159.0" />
+      <Label layoutX="440.0" layoutY="84.0" text="Cargo Operation type" />
+      <ComboBox layoutX="571.0" layoutY="80.0" prefWidth="150.0" />
+      <Label layoutX="440.0" layoutY="125.0" text="Cargo Operation Catagory" />
+      <ComboBox layoutX="571.0" layoutY="121.0" prefWidth="150.0" />
+      <Label layoutX="439.0" layoutY="163.0" text="status" />
+      <ComboBox layoutX="570.0" layoutY="159.0" prefWidth="150.0" />
+      <Button layoutX="160.0" layoutY="228.0" mnemonicParsing="false" text="View cargo" />
+      <TableView layoutX="51.0" layoutY="280.0" prefHeight="200.0" prefWidth="668.0">
+        <columns>
+          <TableColumn prefWidth="115.19997787475586" text="ship id" />
+          <TableColumn prefWidth="87.20001220703125" text="ship name" />
+            <TableColumn prefWidth="88.80000305175781" text="current dock location" />
+            <TableColumn prefWidth="114.39990234375" text="cargo operation type" />
+            <TableColumn prefWidth="148.800048828125" text="cargo operation catagory" />
+            <TableColumn prefWidth="117.60003662109375" text="status" />
+        </columns>
+      </TableView>
+   </children>
+</AnchorPane>
