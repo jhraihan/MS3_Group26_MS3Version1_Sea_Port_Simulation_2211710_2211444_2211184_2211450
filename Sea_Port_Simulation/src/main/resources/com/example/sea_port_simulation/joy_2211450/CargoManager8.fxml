@@ -25,7 +25,7 @@
         <columns>
           <TableColumn fx:id="CargoIdCol" prefWidth="175.19995880126953" text="CargoId" />
             <TableColumn fx:id="EnterRemarkCol" prefWidth="186.4000244140625" text="Enter Remark" />
-          <TableColumn fx:id="StatusCol" prefWidth="182.39993286132812" text="Status" />
+          <TableColumn fx:id="StatusChoiceBoxCol" prefWidth="182.39993286132812" text="Status" />
         </columns>
       </TableView>
       <Label layoutX="41.0" layoutY="179.0" text="Enter Remark" />

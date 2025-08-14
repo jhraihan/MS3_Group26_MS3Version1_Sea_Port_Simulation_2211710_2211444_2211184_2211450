@@ -1,7 +1,9 @@
 package com.example.sea_port_simulation.joy_2211450;
 
 import javafx.event.ActionEvent;
+import javafx.fxml.FXML;
 import javafx.scene.control.*;
+import javafx.scene.control.cell.PropertyValueFactory;
 
 public class CargoManager7 {
     @javafx.fxml.FXML
@@ -24,6 +26,17 @@ public class CargoManager7 {
     private TextField ExpectedTimeTextField;
     @javafx.fxml.FXML
     private TableColumn <CargoManager7,String>LocationCol;
+
+    @FXML
+    public void initialize() {
+        CargoIdCol.setCellValueFactory(new PropertyValueFactory<>("CargoId"));
+        ExpectedTimeCol.setCellValueFactory(new PropertyValueFactory<>("ExpectedTime"));
+        StatusCol.setCellValueFactory(new PropertyValueFactory<>("Status"));
+        LocationCol.setCellValueFactory(new PropertyValueFactory<>("Location"));
+        ValidateTimeCol.setCellValueFactory(new PropertyValueFactory<>("ValidateTime"));
+
+
+    }
 
     @Deprecated
     public void ScheduleButton(ActionEvent actionEvent) {
