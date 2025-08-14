@@ -10,7 +10,7 @@ public class MonitorCCTVMarycontroller
     @javafx.fxml.FXML
     private Label lblLiveStatus;
     @javafx.fxml.FXML
-    private ComboBox comboCameraSelect;
+    private ComboBox<String> comboCameraSelect;
 
     @FXML private TableView<MonitorCCTVMary> tblCctv;
     @FXML private TableColumn<MonitorCCTVMary, String> colCamId;
