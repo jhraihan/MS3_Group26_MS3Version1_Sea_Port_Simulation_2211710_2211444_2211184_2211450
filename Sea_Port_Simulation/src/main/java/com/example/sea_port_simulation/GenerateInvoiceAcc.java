@@ -1,5 +1,7 @@
 package com.example.sea_port_simulation;
 
+import javafx.scene.control.TextField;
+
 public class GenerateInvoiceAcc {
     private String invoiceId;
     private String shipId;
@@ -15,6 +17,14 @@ public class GenerateInvoiceAcc {
         this.serviceCharge = serviceCharge;
         this.tax = tax;
         this.total = total;
+    }
+
+    public GenerateInvoiceAcc() {
+
+    }
+
+    public GenerateInvoiceAcc(TextField txtShipId, TextField txtBerth, TextField txtService, TextField txtTax) {
+
     }
 
     public String getInvoiceId() {
