@@ -26,7 +26,6 @@ public class CargoManager1 {
 
     }
 
-
     @javafx.fxml.FXML
     public void SubmitButton(ActionEvent actionEvent) {
         String cargoId = CargoIdTextField.getText();

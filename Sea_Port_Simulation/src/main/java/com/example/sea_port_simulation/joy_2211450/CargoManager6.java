@@ -1,7 +1,9 @@
 package com.example.sea_port_simulation.joy_2211450;
 
 import javafx.event.ActionEvent;
+import javafx.fxml.FXML;
 import javafx.scene.control.*;
+import javafx.scene.control.cell.PropertyValueFactory;
 
 import java.time.LocalDate;
 
@@ -20,6 +22,14 @@ public class CargoManager6 {
     private TableView <CargoManager6>TableView;
     @javafx.fxml.FXML
     private TableColumn <CargoManager6,String>ExpiryListCol;
+
+    @FXML
+    public void initialize() {
+        CargoIdCol.setCellValueFactory(new PropertyValueFactory<>("CargoId"));
+        DateCol.setCellValueFactory(new PropertyValueFactory<>("Date"));
+        ExpiryListCol.setCellValueFactory(new PropertyValueFactory<>("ExpiryList"));
+
+    }
 
     @javafx.fxml.FXML
     public void UpdateStatusButton(ActionEvent actionEvent) {

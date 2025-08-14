@@ -28,5 +28,15 @@ public class CargoManager3 {
 
     @FXML
     public void AssignButton(ActionEvent actionEvent) {
+        String cargoId = CargoIdTextField.getText();
+        String AvailableSlot=AvailableSlotTextField.getText();
+        if (cargoId.isEmpty() || AvailableSlot.isEmpty()) {
+            ConfirmationLable.setText("Fill all boxes");
+            return;
+        }
+        CargoManager1Model newCargo = new CargoManager1Model(cargoId,AvailableSlot );
+        TableView.getItems().add(newCargo);
+        ConfirmationLable.setText("successfully!");
+
     }
 }
