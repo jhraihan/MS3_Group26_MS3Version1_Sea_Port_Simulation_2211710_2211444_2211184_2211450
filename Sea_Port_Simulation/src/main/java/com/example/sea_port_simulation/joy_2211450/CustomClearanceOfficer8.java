@@ -1,25 +1,36 @@
 package com.example.sea_port_simulation.joy_2211450;
 
 import javafx.event.ActionEvent;
+import javafx.scene.control.ComboBox;
+import javafx.scene.control.DatePicker;
 import javafx.scene.control.TextField;
 
 public class CustomClearanceOfficer8 {
     @javafx.fxml.FXML
     private TextField CargoIdTextField;
-
     @javafx.fxml.FXML
-    public void ValidateIdButton(ActionEvent actionEvent) {
-    }
+    private TextField OfficerIdTextField;
+    @javafx.fxml.FXML
+    private ComboBox CargoStatusComboBox;
+    @javafx.fxml.FXML
+    private TextField OfficerNameTextField;
+    @javafx.fxml.FXML
+    private DatePicker EffectiveDateP;
+    @javafx.fxml.FXML
+    private TextField ReasonForRevocationTextField;
+    @javafx.fxml.FXML
+    private DatePicker RevocationDateP;
+
 
     @javafx.fxml.FXML
     public void CheckClearanceHHistoryButton(ActionEvent actionEvent) {
     }
 
     @javafx.fxml.FXML
-    public void NotifyPartiesButton(ActionEvent actionEvent) {
+    public void RevokeClearanceButton(ActionEvent actionEvent) {
     }
 
     @javafx.fxml.FXML
-    public void RevokeClearanceButton(ActionEvent actionEvent) {
+    public void SaveButton(ActionEvent actionEvent) {
     }
 }
