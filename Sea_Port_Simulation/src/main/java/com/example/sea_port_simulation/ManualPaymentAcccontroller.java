@@ -13,11 +13,18 @@ public class ManualPaymentAcccontroller
     private TextField txtPayerDetails;
     @javafx.fxml.FXML
     private Label lblPaymentStatus;
-
-    @FXML private TextField txtTxn, txtAmount, txtPayer, txtReceipt, txtDate;
-    @FXML private TableView<ManualPaymentAcc> tblManual;
-    @FXML private TableColumn<ManualPaymentAcc, String> colMTxn, colMPayer, colMReceipt, colMDate;
-    @FXML private TableColumn<ManualPaymentAcc, Number> colMAmt;
+    @javafx.fxml.FXML
+    private TableColumn colMAmt;
+    @javafx.fxml.FXML
+    private TableView tblPaymentStatus;
+    @javafx.fxml.FXML
+    private TableColumn colMTxn;
+    @javafx.fxml.FXML
+    private TableColumn colMDate;
+    @javafx.fxml.FXML
+    private TableColumn colMPayer;
+    @javafx.fxml.FXML
+    private TableColumn colMReceipt;
 
     @javafx.fxml.FXML
     public void initialize() {
@@ -30,21 +37,16 @@ public class ManualPaymentAcccontroller
 
     @javafx.fxml.FXML
     public void handleAttachReceipt(ActionEvent actionEvent) {
-        new Alert(Alert.AlertType.INFORMATION,"Check attached receipts().").showAndWait();
+        new Alert(Alert.AlertType.WARNING, "Attach Receipt").showAndWait();
     }
 
-    @javafx.fxml.FXML
+    @FXML
     public void handleConfirmPayment(ActionEvent actionEvent) {
-        try {
-            String id = txtTxn.getText();
-            double amt = Double.parseDouble(txtAmount.getText());
-            String payer = txtPayer.getText();
-            String rec = txtReceipt.getText();
-            String date = txtDate.getText();
-            tblManual.getItems().add(new ManualPaymentAcc(id, amt, payer, rec, date));
-            txtTxn.clear(); txtAmount.clear(); txtPayer.clear(); txtReceipt.clear(); txtDate.clear();
-        } catch (NumberFormatException nfe) {
-            new Alert(Alert.AlertType.ERROR, "Amount must be numeric").showAndWait();
-        }
+        String id = colMTxn.getText();
+        String payer = colMPayer.getText();
+        String rec = colMReceipt.getText();
+        String date = colMDate.getText();
+        colMTxn.getText(); colMPayer.getText();
+    new Alert(Alert.AlertType.ERROR, "Amount must be numeric").showAndWait();
     }
 }

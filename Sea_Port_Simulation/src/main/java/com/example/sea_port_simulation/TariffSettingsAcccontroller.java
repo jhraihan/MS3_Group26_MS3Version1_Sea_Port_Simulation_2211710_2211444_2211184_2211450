@@ -1,29 +1,34 @@
 package com.example.sea_port_simulation;
 
-import javafx.fxml.FXML;
 import javafx.scene.control.*;
 import javafx.scene.control.cell.PropertyValueFactory;
 
 public class TariffSettingsAcccontroller
 {
     @javafx.fxml.FXML
-    private Button handleGenerateChart;
+    private Button handleSaveRates;
     @javafx.fxml.FXML
     private TextField txtTaxRules;
     @javafx.fxml.FXML
     private TextField txtServiceCharge;
     @javafx.fxml.FXML
     private Label lblSaveStatus;
-
-    @FXML private TextField txtSurcharge, txtTaxPct, txtEffective;
-    @FXML private TableView<TariffSettingsAcc> tblTariffs;
-    @FXML private TableColumn<TariffSettingsAcc, Number> colBase, colSurcharge, colTaxPct;
-    @FXML private TableColumn<TariffSettingsAcc, String> colEff;
+    @javafx.fxml.FXML
+    private TextField txtBaseRate;
+    @javafx.fxml.FXML
+    private TableView tblTariffs;
+    @javafx.fxml.FXML
+    private TableColumn colSurCharge;
+    @javafx.fxml.FXML
+    private TableColumn colBase;
+    @javafx.fxml.FXML
+    private TableColumn colTaxPct;
+    @javafx.fxml.FXML
+    private TableColumn colEff;
 
     @javafx.fxml.FXML
     public void initialize() {
         colBase.setCellValueFactory(new PropertyValueFactory<>("baseDockingRate"));
-        colSurcharge.setCellValueFactory(new PropertyValueFactory<>("serviceSurcharge"));
         colTaxPct.setCellValueFactory(new PropertyValueFactory<>("taxPercentage"));
         colEff.setCellValueFactory(new PropertyValueFactory<>("effectiveFrom"));
     }}

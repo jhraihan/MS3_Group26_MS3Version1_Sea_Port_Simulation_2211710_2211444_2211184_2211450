@@ -13,8 +13,6 @@ public class CargoVerificationMarycontroller
 {
     @javafx.fxml.FXML
     private Label lblValidationResult;
-    @javafx.fxml.FXML
-    private TableView tvCargoList;
 
     @FXML private TableView<CargoVerificationMary> tblCargo;
     @FXML private TableColumn<CargoVerificationMary, String> colManifest;

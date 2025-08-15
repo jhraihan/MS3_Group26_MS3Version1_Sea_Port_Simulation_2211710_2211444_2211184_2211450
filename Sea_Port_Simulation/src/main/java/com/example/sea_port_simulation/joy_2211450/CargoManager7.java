@@ -5,6 +5,8 @@ import javafx.fxml.FXML;
 import javafx.scene.control.*;
 import javafx.scene.control.cell.PropertyValueFactory;
 
+import java.time.LocalDate;
+
 public class CargoManager7 {
     @javafx.fxml.FXML
     private TableColumn<CargoManager7,String> CargoIdCol;
@@ -26,6 +28,8 @@ public class CargoManager7 {
     private TextField ExpectedTimeTextField;
     @javafx.fxml.FXML
     private TableColumn <CargoManager7,String>LocationCol;
+    @FXML
+    private TextArea LocationTextArea;
 
     @FXML
     public void initialize() {
@@ -40,17 +44,37 @@ public class CargoManager7 {
 
     @Deprecated
     public void ScheduleButton(ActionEvent actionEvent) {
+        String CargoId=CargoIdTextField.getText();
+        String ExpectedTime=ExpectedTimeTextField.getText();
+        String Status=StatusTextField.getText();
+        String Location=LocationTextArea.getText();
+
     }
 
     @javafx.fxml.FXML
     public void CheckAvailabilityButton(ActionEvent actionEvent) {
+        String CargoId=CargoIdTextField.getText();
+        String ExpectedTime=ExpectedTimeTextField.getText();
+        String Status=StatusTextField.getText();
+        String Location=LocationTextArea.getText();
+
     }
 
     @javafx.fxml.FXML
     public void ConfirmScheduleButton(ActionEvent actionEvent) {
+        String CargoId=CargoIdTextField.getText();
+        String ExpectedTime=ExpectedTimeTextField.getText();
+        String Status=StatusTextField.getText();
+        String Location=LocationTextArea.getText();
+
     }
 
     @javafx.fxml.FXML
     public void NotifyUnloadingTeamButton(ActionEvent actionEvent) {
+        String CargoId=CargoIdTextField.getText();
+        String ExpectedTime=ExpectedTimeTextField.getText();
+        String Status=StatusTextField.getText();
+        String Location=LocationTextArea.getText();
+
     }
 }

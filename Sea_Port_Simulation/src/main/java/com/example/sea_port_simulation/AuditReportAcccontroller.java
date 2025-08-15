@@ -2,7 +2,10 @@ package com.example.sea_port_simulation;
 
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
-import javafx.scene.control.*;
+import javafx.scene.control.Alert;
+import javafx.scene.control.Label;
+import javafx.scene.control.TableColumn;
+import javafx.scene.control.TableView;
 import javafx.scene.control.cell.PropertyValueFactory;
 
 public class AuditReportAcccontroller
@@ -10,12 +13,15 @@ public class AuditReportAcccontroller
     @javafx.fxml.FXML
     private Label lblAuditMessage;
     @javafx.fxml.FXML
-    private TableView tvAuditLogs;
-
-    @FXML private TextField txtPeriod;
-    @FXML private TableView<AuditReportAcc> tblAudit;
-    @FXML private TableColumn<AuditReportAcc, String> colAPeriod, colASummary;
-    @FXML private TableColumn<AuditReportAcc, Number> colATxns, colATotal;
+    private TableView tblAuditMessage;
+    @javafx.fxml.FXML
+    private TableColumn colATxns;
+    @javafx.fxml.FXML
+    private TableColumn colASummary;
+    @javafx.fxml.FXML
+    private TableColumn colATotal;
+    @javafx.fxml.FXML
+    private TableColumn colAPeriod;
 
     @javafx.fxml.FXML
     public void initialize() {
@@ -27,14 +33,15 @@ public class AuditReportAcccontroller
 
     @javafx.fxml.FXML
     public void handleExportAuditPDF(ActionEvent actionEvent) {
-        new Alert(Alert.AlertType.INFORMATION, "Check Audit PDF().").showAndWait();
     }
 
-    @javafx.fxml.FXML
-    public void handleGenerateAudit(ActionEvent actionEvent) {
-        String p = txtPeriod.getText().trim();
-        if (p.isEmpty()) { new Alert(Alert.AlertType.WARNING,"Enter a period").showAndWait(); return; }
-        tblAudit.getItems().add(new AuditReportAcc(p, 250, 91000.40, "Auto-generated demo report"));
-        txtPeriod.clear();
+    @FXML
+    public TableColumn handleGenerateAudit(ActionEvent actionEvent) {
+        String p = colAPeriod.getText().trim();
+        if (p.isEmpty()) { new Alert(Alert.AlertType.WARNING,"Enter a period").showAndWait();
+            return null;
+        }
+        tblAuditMessage.getItems().add(new AuditReportAcc(p, 250, 91000.40, "Auto-generated demo report"));
+        return colAPeriod;
     }
-    }
+}

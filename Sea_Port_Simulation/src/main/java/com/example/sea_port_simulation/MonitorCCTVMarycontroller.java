@@ -10,7 +10,7 @@ public class MonitorCCTVMarycontroller
     @javafx.fxml.FXML
     private Label lblLiveStatus;
     @javafx.fxml.FXML
-    private ComboBox<String> comboCameraSelect;
+    private ComboBox comboCameraSelect;
 
     @FXML private TableView<MonitorCCTVMary> tblCctv;
     @FXML private TableColumn<MonitorCCTVMary, String> colCamId;
@@ -27,6 +27,6 @@ public class MonitorCCTVMarycontroller
 
     @javafx.fxml.FXML
     public void btnViewLive(ActionEvent actionEvent) {
-        new Alert(Alert.AlertType.INFORMATION, "Check emails().").showAndWait();
+        new Alert(Alert.AlertType.WARNING, "Live Status").showAndWait();
     }
 }
