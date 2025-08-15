@@ -1,10 +1,5 @@
 package com.example.sea_port_simulation;
 
-import javafx.event.ActionEvent;
-import javafx.scene.chart.LineChart;
-import javafx.scene.control.ComboBox;
-import javafx.scene.control.Label;
-
 public class RevenueAnalyticsAcccontroller
 {
     @javafx.fxml.FXML

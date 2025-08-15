@@ -46,8 +46,6 @@ public class CargoManager4 {
             String Location=LocationTextField.getText();
             LocalDate Date=DateP.getValue();
 
-
-
         }
 
     @javafx.fxml.FXML
