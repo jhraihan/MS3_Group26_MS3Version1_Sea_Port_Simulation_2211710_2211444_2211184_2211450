@@ -18,12 +18,6 @@ public class AuditLogsMarycontroller
     @javafx.fxml.FXML
     private Label lblAuditStatus;
 
-    @FXML private TableView<AuditLogsMary> tblAudit;
-    @FXML private TableColumn<AuditLogsMary, String> colRange;
-    @FXML private TableColumn<AuditLogsMary, Number> colEntries;
-    @FXML private TableColumn<AuditLogsMary, Number> colAlerts;
-    @FXML private TableColumn<AuditLogsMary, Number> colBreaches;
-
     @javafx.fxml.FXML
     public void initialize() {
         colRange.setCellValueFactory(new PropertyValueFactory<>("dateRange"));
