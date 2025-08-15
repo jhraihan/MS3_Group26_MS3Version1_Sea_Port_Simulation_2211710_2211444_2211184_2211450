@@ -9,7 +9,6 @@
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-
 <AnchorPane prefHeight="269.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/24.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.sea_port_simulation.Nasir_2211444.SearchAssignmentController">
    <children>
       <Text layoutX="253.0" layoutY="54.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Assignment">
@@ -17,12 +16,12 @@
             <Font size="18.0" />
          </font>
       </Text>
-      <TextField layoutX="117.0" layoutY="100.0" />
+      <TextField fx:id="assignmentPilotIdTextField" layoutX="117.0" layoutY="100.0" />
       <Label layoutX="65.0" layoutY="104.0" text="Pilot ID :" />
-      <DatePicker layoutX="398.0" layoutY="100.0" />
-      <ComboBox layoutX="281.0" layoutY="145.0" prefWidth="150.0" />
+      <DatePicker fx:id="assignmentDateDatePicker" layoutX="398.0" layoutY="100.0" />
+      <ComboBox fx:id="assignmentWorkingZoneComboBox" layoutX="281.0" layoutY="145.0" prefWidth="150.0" />
       <Label layoutX="356.0" layoutY="104.0" text="Date :" />
       <Label layoutX="192.0" layoutY="149.0" text="Working Zone :" />
-      <Button layoutX="284.0" layoutY="194.0" mnemonicParsing="false" text="Go" />
+      <Button layoutX="284.0" layoutY="194.0" mnemonicParsing="false" onAction="#assignmentGoOAButton" text="Go" />
    </children>
 </AnchorPane>
