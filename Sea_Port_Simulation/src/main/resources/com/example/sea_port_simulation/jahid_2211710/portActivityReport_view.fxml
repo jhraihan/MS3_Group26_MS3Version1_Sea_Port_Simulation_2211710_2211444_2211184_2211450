@@ -10,7 +10,6 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-
 <AnchorPane prefHeight="476.0" prefWidth="681.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.sea_port_simulation.jahid_2211710.PortActivityReportViewcontroller">
    <children>
       <Label layoutX="233.0" layoutY="30.0" text="Port Activity Report">
@@ -19,23 +18,23 @@
          </font>
       </Label>
       <Label layoutX="52.0" layoutY="85.0" text="Report ID" />
-      <TextField layoutX="131.0" layoutY="81.0" />
+      <TextField fx:id="reportIDtextfield" layoutX="131.0" layoutY="81.0" />
       <Label layoutX="52.0" layoutY="121.0" text="Report Type" />
-      <ComboBox layoutX="131.0" layoutY="117.0" prefWidth="150.0" />
+      <ComboBox fx:id="reportTypecombobox" layoutX="131.0" layoutY="117.0" prefWidth="150.0" />
       <Label layoutX="52.0" layoutY="158.0" text="Export Format" />
-      <ComboBox layoutX="131.0" layoutY="154.0" prefWidth="150.0" />
+      <ComboBox fx:id="exportFormatCombobox" layoutX="131.0" layoutY="154.0" prefWidth="150.0" />
       <Label layoutX="363.0" layoutY="85.0" text="Start Date" />
-      <DatePicker layoutX="457.0" layoutY="81.0" />
+      <DatePicker fx:id="startDatedatepicker" layoutX="457.0" layoutY="81.0" />
       <Label layoutX="363.0" layoutY="121.0" text="End Date" />
-      <DatePicker layoutX="457.0" layoutY="117.0" />
-      <Button layoutX="364.0" layoutY="180.0" mnemonicParsing="false" text="Generate" />
-      <TableView layoutX="42.0" layoutY="247.0" prefHeight="200.0" prefWidth="602.0">
+      <DatePicker fx:id="endDateDatepicker" layoutX="457.0" layoutY="117.0" />
+      <Button layoutX="364.0" layoutY="180.0" mnemonicParsing="false" onAction="#generateButtonOnAction" text="Generate" />
+      <TableView fx:id="portActivityreportTableview" layoutX="42.0" layoutY="247.0" prefHeight="200.0" prefWidth="602.0">
         <columns>
-          <TableColumn prefWidth="140.00000381469727" text="report id" />
-          <TableColumn prefWidth="103.99998474121094" text="report type" />
-            <TableColumn prefWidth="109.59991455078125" text="export format" />
-            <TableColumn prefWidth="120.79998779296875" text="start date" />
-            <TableColumn prefWidth="129.60003662109375" text="end date" />
+          <TableColumn fx:id="reportIDcol" prefWidth="140.00000381469727" text="report id" />
+          <TableColumn fx:id="reportTypecol" prefWidth="103.99998474121094" text="report type" />
+            <TableColumn fx:id="exportFormatcol" prefWidth="109.59991455078125" text="export format" />
+            <TableColumn fx:id="startDateCol" prefWidth="120.79998779296875" text="start date" />
+            <TableColumn fx:id="endDateCol" prefWidth="129.60003662109375" text="end date" />
         </columns>
       </TableView>
    </children>

@@ -9,7 +9,6 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-
 <AnchorPane prefHeight="513.0" prefWidth="694.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.sea_port_simulation.jahid_2211710.DockViewcontroller">
    <children>
       <Label layoutX="266.0" layoutY="29.0" text="Dock Management">
@@ -18,29 +17,29 @@
          </font>
       </Label>
       <Label layoutX="60.0" layoutY="87.0" text="dock ID" />
-      <TextField layoutX="138.0" layoutY="83.0" />
+      <TextField fx:id="dockIDtextfield" layoutX="138.0" layoutY="83.0" />
       <Label layoutX="60.0" layoutY="125.0" text="Name" />
-      <TextField layoutX="138.0" layoutY="121.0" />
+      <TextField fx:id="nameTextfield" layoutX="138.0" layoutY="121.0" />
       <Label layoutX="60.0" layoutY="160.0" text="Max Ship Size" />
-      <TextField layoutX="137.0" layoutY="156.0" />
+      <TextField fx:id="maxShipSizetextfield" layoutX="137.0" layoutY="156.0" />
       <Label layoutX="60.0" layoutY="193.0" text="Location" />
-      <TextField layoutX="137.0" layoutY="189.0" />
+      <TextField fx:id="locationTextfield" layoutX="137.0" layoutY="189.0" />
       <Label layoutX="363.0" layoutY="87.0" text="Size" />
-      <ComboBox layoutX="471.0" layoutY="83.0" prefWidth="150.0" promptText="select size" />
+      <ComboBox fx:id="selectSizeCombobox" layoutX="471.0" layoutY="83.0" prefWidth="150.0" promptText="select size" />
       <Label layoutX="363.0" layoutY="125.0" text="Status" />
-      <ComboBox layoutX="471.0" layoutY="121.0" prefWidth="150.0" promptText="select status" />
+      <ComboBox fx:id="statusCombobox" layoutX="471.0" layoutY="121.0" prefWidth="150.0" promptText="select status" />
       <Label layoutX="363.0" layoutY="160.0" text="Specialization" />
-      <ComboBox layoutX="471.0" layoutY="156.0" prefWidth="150.0" />
-      <Button layoutX="359.0" layoutY="224.0" mnemonicParsing="false" text="Add new dock" />
-      <TableView layoutX="29.0" layoutY="279.0" prefHeight="200.0" prefWidth="637.0">
+      <ComboBox fx:id="specializationCombobox" layoutX="471.0" layoutY="156.0" prefWidth="150.0" />
+      <Button layoutX="359.0" layoutY="224.0" mnemonicParsing="false" onAction="#addDockButtonOnAction" text="Add new dock" />
+      <TableView fx:id="dockManagementTableview" layoutX="29.0" layoutY="279.0" prefHeight="200.0" prefWidth="637.0">
         <columns>
-          <TableColumn prefWidth="104.80001449584961" text="dock id" />
-          <TableColumn prefWidth="87.199951171875" text="name" />
-            <TableColumn prefWidth="82.39997863769531" text="max ship size" />
-            <TableColumn text="location" />
-            <TableColumn prefWidth="92.79998779296875" text="size" />
-            <TableColumn prefWidth="92.800048828125" text="status" />
-            <TableColumn prefWidth="101.5999755859375" text="specialization" />
+          <TableColumn fx:id="dockIDcol" prefWidth="104.80001449584961" text="dock id" />
+          <TableColumn fx:id="nameCol" prefWidth="87.199951171875" text="name" />
+            <TableColumn fx:id="maxShipsizeCol" prefWidth="82.39997863769531" text="max ship size" />
+            <TableColumn fx:id="locationCol" text="location" />
+            <TableColumn fx:id="sizeCol" prefWidth="92.79998779296875" text="size" />
+            <TableColumn fx:id="statusCol" prefWidth="92.800048828125" text="status" />
+            <TableColumn fx:id="specializationCol" prefWidth="101.5999755859375" text="specialization" />
         </columns>
       </TableView>
    </children>
