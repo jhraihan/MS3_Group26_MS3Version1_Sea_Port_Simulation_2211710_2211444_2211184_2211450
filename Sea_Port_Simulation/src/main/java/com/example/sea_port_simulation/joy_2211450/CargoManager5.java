@@ -36,9 +36,25 @@ public class CargoManager5 {
 
     @javafx.fxml.FXML
     public void SaveReportButton(ActionEvent actionEvent) {
+        String CargoId=CargoIdTextField.getText();
+        String Location=LocationTextArea.getText();
+        LocalDate Date=DateD.getValue();
+
     }
 
     @javafx.fxml.FXML
     public void Statusbutton(ActionEvent actionEvent) {
+        String CargoId=CargoIdTextField.getText();
+        String Location=LocationTextArea.getText();
+        LocalDate Date=DateD.getValue();
+
+    }
+
+    @FXML
+    public void GenerateButton(ActionEvent actionEvent) {
+        String CargoId=CargoIdTextField.getText();
+        String Location=LocationTextArea.getText();
+        LocalDate Date=DateD.getValue();
+
     }
 }

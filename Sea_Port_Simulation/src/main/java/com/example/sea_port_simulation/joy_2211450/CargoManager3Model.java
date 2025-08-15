@@ -4,11 +4,11 @@ import java.io.Serializable;
 
 public class CargoManager3Model implements Serializable {
     private String CargoId;
-    private int AvailableSlots;
+    private int AvailableSlot;
 
     public CargoManager3Model(String cargoId, int availableSlots) {
         CargoId = cargoId;
-        AvailableSlots = availableSlots;
+        AvailableSlot = availableSlots;
     }
 
     public String getCargoId() {
@@ -20,18 +20,18 @@ public class CargoManager3Model implements Serializable {
     }
 
     public int getAvailableSlots() {
-        return AvailableSlots;
+        return AvailableSlot;
     }
 
     public void setAvailableSlots(int availableSlots) {
-        AvailableSlots = availableSlots;
+        AvailableSlot = availableSlots;
     }
 
     @Override
     public String toString() {
         return "CargoManager3Model{" +
                 "CargoId='" + CargoId + '\'' +
-                ", AvailableSlots=" + AvailableSlots +
+                ", AvailableSlots=" + AvailableSlot +
                 '}';
     }
 }

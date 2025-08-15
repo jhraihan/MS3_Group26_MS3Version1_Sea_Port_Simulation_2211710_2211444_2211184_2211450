@@ -25,7 +25,7 @@
       <TextArea fx:id="LocationTextArea" layoutX="112.0" layoutY="201.0" prefHeight="53.0" prefWidth="200.0" />
       <TextField fx:id="CargoIdTextField" layoutX="102.0" layoutY="102.0" />
       <Text layoutX="41.0" layoutY="168.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Date" />
-      <Button layoutX="461.0" layoutY="565.0" mnemonicParsing="false" text="Generate Report" />
+      <Button layoutX="461.0" layoutY="565.0" mnemonicParsing="false" onAction="#GenerateButton" text="Generate Report" />
       <TableView fx:id="TableView" layoutX="42.0" layoutY="345.0" prefHeight="200.0" prefWidth="482.0">
         <columns>
           <TableColumn fx:id="CargoIdCol" prefWidth="112.800048828125" text="CargoId" />

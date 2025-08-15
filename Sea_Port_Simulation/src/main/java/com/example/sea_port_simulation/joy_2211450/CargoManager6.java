@@ -33,13 +33,25 @@ public class CargoManager6 {
 
     @javafx.fxml.FXML
     public void UpdateStatusButton(ActionEvent actionEvent) {
+        String CargoId=CargoIdTextField.getText();
+        String Expiry=ExpiredListTextField.getText();
+        LocalDate Date=DateD.getValue();
+
     }
 
     @javafx.fxml.FXML
     public void ExpiryCheckButton(ActionEvent actionEvent) {
+        String CargoId=CargoIdTextField.getText();
+        String Expiry=ExpiredListTextField.getText();
+        LocalDate Date=DateD.getValue();
+
     }
 
     @javafx.fxml.FXML
     public void NotifyStakeholderButton(ActionEvent actionEvent) {
+        String CargoId=CargoIdTextField.getText();
+        String Expiry=ExpiredListTextField.getText();
+        LocalDate Date=DateD.getValue();
+
     }
 }
