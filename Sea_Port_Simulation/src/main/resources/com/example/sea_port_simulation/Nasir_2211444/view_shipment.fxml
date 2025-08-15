@@ -9,7 +9,6 @@
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-
 <AnchorPane prefHeight="396.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/24.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.sea_port_simulation.Nasir_2211444.ViewShipmentController">
    <children>
       <Text layoutX="213.0" layoutY="52.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Shipment Information">
@@ -17,15 +16,15 @@
             <Font size="18.0" />
          </font>
       </Text>
-      <TextField layoutX="98.0" layoutY="105.0" />
+      <TextField fx:id="siClientIdTextField" layoutX="98.0" layoutY="105.0" />
       <Label layoutX="37.0" layoutY="109.0" text="Client ID :" />
-      <TextField layoutX="411.0" layoutY="105.0" />
+      <TextField fx:id="siShippingIdTextField" layoutX="411.0" layoutY="105.0" />
       <Label layoutX="330.0" layoutY="109.0" text="Shipping ID :" />
-      <Button layoutX="486.0" layoutY="149.0" mnemonicParsing="false" text="See Details" />
-      <TableView layoutX="9.0" layoutY="190.0" prefHeight="200.0" prefWidth="364.0">
+      <Button layoutX="486.0" layoutY="149.0" mnemonicParsing="false" onAction="#siDetailsTableView" text="See Details" />
+      <TableView fx:id="siTableView" layoutX="9.0" layoutY="190.0" prefHeight="200.0" prefWidth="364.0">
         <columns>
-          <TableColumn prefWidth="183.20001220703125" text="Client ID" />
-          <TableColumn prefWidth="179.20001220703125" text="Shipping ID" />
+          <TableColumn fx:id="siClientIdCol" prefWidth="183.20001220703125" text="Client ID" />
+          <TableColumn fx:id="siShippingIdCol" prefWidth="179.20001220703125" text="Shipping ID" />
         </columns>
       </TableView>
    </children>

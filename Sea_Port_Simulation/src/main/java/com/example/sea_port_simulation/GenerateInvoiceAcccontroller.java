@@ -15,8 +15,6 @@ public class GenerateInvoiceAcccontroller {
     @javafx.fxml.FXML
     private Label lblCalculatedAmount;
 
-    @FXML private TextField txtShipId, txtService, txtTax;
-
     @FXML private TableView<GenerateInvoiceAcc> tblInvoices;
     @FXML private TableColumn<GenerateInvoiceAcc, String> colInvId;
     @FXML private TableColumn<GenerateInvoiceAcc, String> colInvShip;
@@ -35,16 +33,17 @@ public class GenerateInvoiceAcccontroller {
 
     @javafx.fxml.FXML
     public void handleExportPDF(ActionEvent actionEvent) {
+        new Alert(Alert.AlertType.ERROR, "Export PDF").showAndWait();
     }
 
     @javafx.fxml.FXML
     public void handleCalculateInvoice(ActionEvent actionEvent) {
         try {
-            String ship = txtShipId.getText();
-            double service = Double.parseDouble(txtService.getText());
-            double tax = Double.parseDouble(txtTax.getText());
+            String ship = colInvShip.getText();
+            double service = Double.parseDouble(colInvService.getText());
+            double tax = Double.parseDouble(colInvTax.getText());
             ObservableList<GenerateInvoiceAcc> items = tblInvoices.getItems();
-            new Alert(Alert.AlertType.ERROR, "Berth/Service/Tax must be numeric").showAndWait();
+            new Alert(Alert.AlertType.ERROR, "Service/Tax must be numeric").showAndWait();
         } finally {
 
         }

@@ -12,12 +12,6 @@ public class OverdueaccountsAcccontroller
 {
     @javafx.fxml.FXML
     private Label lblReminderStatus;
-    @javafx.fxml.FXML
-    private TableColumn colAmountOverdue;
-    @javafx.fxml.FXML
-    private TableColumn colClientName;
-    @javafx.fxml.FXML
-    private TableView tvOverdueClients;
 
     @FXML private TableView<OverdueaccountsAcccontroller> tblOverdue;
     @FXML private TableColumn<OverdueaccountsAcccontroller, String> colClient, colLastInv;
@@ -38,6 +32,6 @@ public class OverdueaccountsAcccontroller
 
     @javafx.fxml.FXML
     public void handleCheckOverdue(ActionEvent actionEvent) {
-        new Alert(Alert.AlertType.INFORMATION, "Reminder emails().").showAndWait();
+        new Alert(Alert.AlertType.INFORMATION, "Check emails().").showAndWait();
     }
 }

@@ -14,15 +14,17 @@ public class AuditLogsMarycontroller
     @javafx.fxml.FXML
     private DatePicker dpDateFrom;
     @javafx.fxml.FXML
-    private TableView tvTableLogs;
-    @javafx.fxml.FXML
     private Label lblAuditStatus;
-
-    @FXML private TableView<AuditLogsMary> tblAudit;
-    @FXML private TableColumn<AuditLogsMary, String> colRange;
-    @FXML private TableColumn<AuditLogsMary, Number> colEntries;
-    @FXML private TableColumn<AuditLogsMary, Number> colAlerts;
-    @FXML private TableColumn<AuditLogsMary, Number> colBreaches;
+    @FXML
+    private TableColumn colAlerts;
+    @FXML
+    private TableColumn colBreaches;
+    @FXML
+    private TableColumn colRange;
+    @FXML
+    private TableView tblAudit;
+    @FXML
+    private TableColumn colEntries;
 
     @javafx.fxml.FXML
     public void initialize() {

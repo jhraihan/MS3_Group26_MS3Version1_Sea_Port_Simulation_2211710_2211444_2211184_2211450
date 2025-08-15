@@ -12,10 +12,12 @@
       <Button layoutX="177.0" layoutY="32.0" mnemonicParsing="false" onAction="#handleGenerateAudit" text="Button" />
       <Button layoutX="177.0" layoutY="79.0" mnemonicParsing="false" onAction="#handleExportAuditPDF" text="Button" />
       <Label fx:id="lblAuditMessage" layoutX="61.0" layoutY="154.0" text="Audit Message" />
-      <TableView fx:id="tvAuditLogs" layoutX="45.0" layoutY="186.0" prefHeight="200.0" prefWidth="200.0">
+      <TableView fx:id="tblAuditMessage" layoutX="45.0" layoutY="186.0" prefHeight="200.0" prefWidth="405.0">
         <columns>
-          <TableColumn prefWidth="75.0" text="C1" />
-          <TableColumn prefWidth="75.0" text="C2" />
+          <TableColumn fx:id="colAPeriod" prefWidth="75.0" text="Period" />
+          <TableColumn fx:id="colATxns" prefWidth="75.0" text="Txns" />
+            <TableColumn fx:id="colATotal" prefWidth="75.0" text="Total" />
+            <TableColumn fx:id="colASummary" prefWidth="75.0" text="Summary" />
         </columns>
       </TableView>
       <Text layoutX="61.0" layoutY="49.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Generate Audit" />

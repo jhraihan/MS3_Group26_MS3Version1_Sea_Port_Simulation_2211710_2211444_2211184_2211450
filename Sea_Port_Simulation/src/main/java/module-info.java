@@ -1,6 +1,7 @@
 module com.example.sea_port_simulation {
     requires javafx.controls;
     requires javafx.fxml;
+    requires java.desktop;
 
 
     opens com.example.sea_port_simulation to javafx.fxml;

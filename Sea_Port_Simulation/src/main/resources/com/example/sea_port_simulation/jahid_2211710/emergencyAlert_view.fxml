@@ -10,7 +10,6 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-
 <AnchorPane prefHeight="487.0" prefWidth="756.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.sea_port_simulation.jahid_2211710.EmergencyAlertViewController">
    <children>
       <Label layoutX="332.0" layoutY="30.0" text="Emergency Alert">
@@ -19,25 +18,25 @@
          </font>
       </Label>
       <Label layoutX="61.0" layoutY="85.0" text="Alert id" />
-      <TextField layoutX="143.0" layoutY="81.0" />
+      <TextField fx:id="alertIDtextfield" layoutX="143.0" layoutY="81.0" />
       <Label layoutX="61.0" layoutY="125.0" text="Alert type" />
       <ComboBox layoutX="143.0" layoutY="121.0" prefWidth="150.0" promptText="select alert type" />
       <Label layoutX="61.0" layoutY="166.0" text="Location" />
-      <TextField layoutX="143.0" layoutY="162.0" />
+      <TextField fx:id="locationTextfield" layoutX="143.0" layoutY="162.0" />
       <Label layoutX="390.0" layoutY="85.0" text="Description" />
       <TextArea layoutX="501.0" layoutY="75.0" prefHeight="75.0" prefWidth="200.0" />
-      <ComboBox layoutX="140.0" layoutY="121.0" prefWidth="150.0" promptText="select alert type" />
-      <TextArea layoutX="498.0" layoutY="75.0" prefHeight="75.0" prefWidth="200.0" />
+      <ComboBox fx:id="alertTypecombobox" layoutX="140.0" layoutY="121.0" prefWidth="150.0" promptText="select alert type" />
+      <TextArea fx:id="descriptiontextarea" layoutX="498.0" layoutY="75.0" prefHeight="75.0" prefWidth="200.0" />
       <Label layoutX="63.0" layoutY="206.0" text="Status" />
-      <ComboBox layoutX="142.0" layoutY="202.0" prefWidth="150.0" promptText="select alert type" />
-      <Button layoutX="395.0" layoutY="215.0" mnemonicParsing="false" text="Create new Emergency" />
-      <TableView layoutX="43.0" layoutY="266.0" prefHeight="200.0" prefWidth="678.0">
+      <ComboBox fx:id="statusCombobox" layoutX="142.0" layoutY="202.0" prefWidth="150.0" promptText="select status" />
+      <Button layoutX="395.0" layoutY="215.0" mnemonicParsing="false" onAction="#createEmergencyButtonOnAction" text="Create new Emergency" />
+      <TableView fx:id="emergencyAlertTableview" layoutX="43.0" layoutY="266.0" prefHeight="200.0" prefWidth="678.0">
         <columns>
-          <TableColumn prefWidth="103.1999740600586" text="Alert id" />
-          <TableColumn prefWidth="119.20001220703125" text="Alert Type" />
-            <TableColumn prefWidth="128.0" text="Location" />
-            <TableColumn prefWidth="127.20004272460938" text="Status" />
-            <TableColumn prefWidth="201.5999755859375" text="Description" />
+          <TableColumn fx:id="alertIDcol" prefWidth="103.1999740600586" text="Alert id" />
+          <TableColumn fx:id="alertTypeCol" prefWidth="119.20001220703125" text="Alert Type" />
+            <TableColumn fx:id="locationCol" prefWidth="128.0" text="Location" />
+            <TableColumn fx:id="statusCol" prefWidth="127.20004272460938" text="Status" />
+            <TableColumn fx:id="descriptionCol" prefWidth="201.5999755859375" text="Description" />
         </columns>
       </TableView>
    </children>

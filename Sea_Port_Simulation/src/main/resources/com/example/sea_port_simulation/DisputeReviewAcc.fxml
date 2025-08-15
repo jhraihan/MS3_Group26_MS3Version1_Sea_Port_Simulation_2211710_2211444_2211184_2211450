@@ -10,10 +10,13 @@
 
 <AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/24.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.sea_port_simulation.DisputeReviewAcccontroller">
    <children>
-      <TableView fx:id="tvTableDisputes" layoutX="27.0" layoutY="186.0" prefHeight="200.0" prefWidth="200.0">
+      <TableView fx:id="tblDisputes" layoutX="27.0" layoutY="186.0" prefHeight="200.0" prefWidth="525.0">
         <columns>
-          <TableColumn prefWidth="75.0" text="C1" />
-          <TableColumn prefWidth="75.0" text="C2" />
+          <TableColumn fx:id="colDispId" prefWidth="75.0" text="Dispute Id" />
+          <TableColumn fx:id="colDispTxn" prefWidth="75.0" text="Dispute Txn" />
+            <TableColumn fx:id="colDispReason" prefWidth="98.0" text="Dispute Reason" />
+            <TableColumn fx:id="colDispStatus" prefWidth="106.6666259765625" text="Dispute Status" />
+            <TableColumn fx:id="colDispComment" prefWidth="111.33331298828125" text="Dispute Comment" />
         </columns>
       </TableView>
       <Text layoutX="27.0" layoutY="34.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Comments" />

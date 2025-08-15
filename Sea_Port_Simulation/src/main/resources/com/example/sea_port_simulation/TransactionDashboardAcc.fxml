@@ -22,10 +22,13 @@
       <Text layoutX="43.0" layoutY="107.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Client" />
       <Text layoutX="43.0" layoutY="154.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Status" />
       <Text layoutX="45.0" layoutY="192.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Filter" />
-      <TableView fx:id="tvTransactions" layoutX="14.0" layoutY="212.0" prefHeight="200.0" prefWidth="200.0">
+      <TableView fx:id="tblTransactions" layoutX="14.0" layoutY="212.0" prefHeight="200.0" prefWidth="527.0">
         <columns>
-          <TableColumn prefWidth="75.0" text="C1" />
-          <TableColumn prefWidth="75.0" text="C2" />
+          <TableColumn fx:id="colTxnId" prefWidth="75.0" text="Txn Id" />
+          <TableColumn fx:id="colClient" prefWidth="75.0" text="Client" />
+            <TableColumn fx:id="colDate" prefWidth="75.0" text="Date" />
+            <TableColumn fx:id="colAmount" prefWidth="75.0" text="Amount" />
+            <TableColumn fx:id="colStatus" prefWidth="75.0" text="Status" />
         </columns>
       </TableView>
    </children>

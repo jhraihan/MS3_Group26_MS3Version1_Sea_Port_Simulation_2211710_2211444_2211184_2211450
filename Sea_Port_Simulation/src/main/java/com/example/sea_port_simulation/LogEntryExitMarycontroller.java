@@ -30,6 +30,6 @@ public class LogEntryExitMarycontroller
 
     @javafx.fxml.FXML
     public void handleRecordEntry(ActionEvent actionEvent) {
-        new Alert(Alert.AlertType.INFORMATION,"Check entry records().").showAndWait();
+        new Alert(Alert.AlertType.WARNING, "Record Entry").showAndWait();
     }
 }

@@ -21,8 +21,6 @@ public class TransactionDashboardAcccontroller
     private ComboBox<String> comboStatus;
     @FXML
     private Label lblResultCount;
-    @FXML
-    private TableView tvTransactions;
 
     @FXML private TableView<TransactionDashboardAcc> tblTransactions;
     @FXML private TableColumn<TransactionDashboardAcc, String> colTxnId;

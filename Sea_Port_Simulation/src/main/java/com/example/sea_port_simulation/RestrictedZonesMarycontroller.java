@@ -7,7 +7,7 @@ import javafx.scene.control.cell.PropertyValueFactory;
 public class RestrictedZonesMarycontroller
 {
     @javafx.fxml.FXML
-    private ComboBox<String> comboAccessLevel;
+    private ComboBox comboAccessLevel;
     @javafx.fxml.FXML
     private Label lblRestrictionStatus;
     @javafx.fxml.FXML

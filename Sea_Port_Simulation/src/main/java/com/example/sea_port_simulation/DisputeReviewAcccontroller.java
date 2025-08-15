@@ -7,20 +7,16 @@ import javafx.scene.control.cell.PropertyValueFactory;
 
 public class DisputeReviewAcccontroller
 {
-    @javafx.fxml.FXML
-    private TableView tvTableDisputes;
-    @javafx.fxml.FXML
-    private TextField txtComments;
-    @javafx.fxml.FXML
-    private Label lblDecisionStatus;
+    @FXML private TableColumn colDispStatus;
+    @FXML private TableView tblDisputes;
+    @FXML private TextField txtComments;
+    @FXML private TableColumn colDispTxn;
+    @FXML private TableColumn colDispComment;
+    @FXML private TableColumn colDispReason;
+    @FXML private Label lblDecisionStatus;
+    @FXML private TableColumn colDispId;
 
-    @FXML private TextField txtDisputeId, txtTxnId, txtReason;
-    @FXML private TextArea txtComment;
-
-    @FXML private TableView<DisputeReviewAcc> tblDisputes;
-    @FXML private TableColumn<DisputeReviewAcc, String> colDispId, colDispTxn, colDispReason, colDispStatus, colDispComment;
-
-    @javafx.fxml.FXML
+    @FXML
     public void initialize() {
         colDispId.setCellValueFactory(new PropertyValueFactory<>("disputeId"));
         colDispTxn.setCellValueFactory(new PropertyValueFactory<>("transactionId"));
@@ -29,13 +25,16 @@ public class DisputeReviewAcccontroller
         colDispComment.setCellValueFactory(new PropertyValueFactory<>("accountantComment"));
     }
 
-    @javafx.fxml.FXML
+    @FXML
     public void handleReject(ActionEvent actionEvent) {
-        new Alert(Alert.AlertType.INFORMATION, "Rejection alert().").showAndWait();
+        Object sel = tblDisputes.getSelectionModel().getSelectedItem();
+        if (sel == null) { new Alert(Alert.AlertType.INFORMATION,"Select a dispute").showAndWait(); return; }
     }
 
-    @javafx.fxml.FXML
+    @FXML
     public void handleApprove(ActionEvent actionEvent) {
-        new Alert(Alert.AlertType.INFORMATION, "Approval emails().").showAndWait();
+        Object sel = tblDisputes.getSelectionModel().getSelectedItem();
+        if (sel == null) { new Alert(Alert.AlertType.INFORMATION,"Select a dispute").showAndWait(); return; }
+
     }
 }
