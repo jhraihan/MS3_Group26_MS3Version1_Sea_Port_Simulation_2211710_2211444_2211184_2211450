@@ -47,11 +47,6 @@ public class AuditReportAcc {
 
     @Override
     public String toString() {
-        return "AuditReportAcc{" +
-                "period='" + period + '\'' +
-                ", transactionCount=" + transactionCount +
-                ", totalAmount=" + totalAmount +
-                ", summary='" + summary + '\'' +
-                '}';
+        return STR."AuditReportAcc{period='\{period}', transactionCount=\{transactionCount}, totalAmount=\{totalAmount}, summary='\{summary}'}";
     }
 }

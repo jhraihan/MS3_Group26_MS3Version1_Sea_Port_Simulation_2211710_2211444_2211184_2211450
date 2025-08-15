@@ -38,6 +38,6 @@ public class OverdueaccountsAcccontroller
 
     @javafx.fxml.FXML
     public void handleCheckOverdue(ActionEvent actionEvent) {
-        new Alert(Alert.AlertType.INFORMATION, "Check emails().").showAndWait();
+        new Alert(Alert.AlertType.INFORMATION, "Reminder emails().").showAndWait();
     }
 }

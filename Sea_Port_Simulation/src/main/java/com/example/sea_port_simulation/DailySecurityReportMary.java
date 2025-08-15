@@ -47,11 +47,6 @@ public class DailySecurityReportMary {
 
     @Override
     public String toString() {
-        return "DailySecurityReportMary{" +
-                "reportDate='" + reportDate + '\'' +
-                ", incidents=" + incidents +
-                ", summary='" + summary + '\'' +
-                ", exported=" + exported +
-                '}';
+        return STR."DailySecurityReportMary{reportDate='\{reportDate}', incidents=\{incidents}, summary='\{summary}', exported=\{exported}}";
     }
 }

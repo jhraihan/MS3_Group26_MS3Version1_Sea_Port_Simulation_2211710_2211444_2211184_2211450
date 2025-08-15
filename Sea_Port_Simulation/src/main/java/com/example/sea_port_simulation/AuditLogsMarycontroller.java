@@ -49,6 +49,6 @@ public class AuditLogsMarycontroller
             return;
         }
         tblAudit.getItems().clear();
-        tblAudit.getItems().add(new AuditLogsMary(f + " to " + t, 111, 5, 2));
+        tblAudit.getItems().add(new AuditLogsMary(STR."\{f} to \{t}", 111, 5, 2));
     }
     }

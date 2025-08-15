@@ -47,11 +47,6 @@ public class AuditLogsMary {
 
     @Override
     public String toString() {
-        return "AuditLogsMary{" +
-                "dateRange='" + dateRange + '\'' +
-                ", entryCount=" + entryCount +
-                ", alertCount=" + alertCount +
-                ", zoneBreaches=" + zoneBreaches +
-                '}';
+        return STR."AuditLogsMary{dateRange='\{dateRange}', entryCount=\{entryCount}, alertCount=\{alertCount}, zoneBreaches=\{zoneBreaches}}";
     }
 }
