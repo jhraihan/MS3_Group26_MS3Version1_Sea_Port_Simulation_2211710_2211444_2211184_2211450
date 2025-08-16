@@ -37,4 +37,12 @@ public class ReportIncidentMarycontroller
             return;
     }
 
-}}
+}
+
+    @FXML
+    public void handleAlertZones(ActionEvent actionEvent) {
+        if (txtIncidentDesc.getText().isBlank() || colIncZone.getText().isBlank()) {
+            new Alert(Alert.AlertType.WARNING, "Please fill description and zone").showAndWait();
+            return;
+        }
+    }}

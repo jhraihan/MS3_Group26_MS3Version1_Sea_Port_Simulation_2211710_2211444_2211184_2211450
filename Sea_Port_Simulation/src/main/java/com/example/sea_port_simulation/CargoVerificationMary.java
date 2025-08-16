@@ -47,11 +47,6 @@ public class CargoVerificationMary {
 
     @Override
     public String toString() {
-        return "CargoVerificationMary{" +
-                "manifestId='" + manifestId + '\'' +
-                ", personnelList='" + personnelList + '\'' +
-                ", vehicleList='" + vehicleList + '\'' +
-                ", validationSuccess=" + validationSuccess +
-                '}';
+        return STR."CargoVerificationMary{manifestId='\{manifestId}', personnelList='\{personnelList}', vehicleList='\{vehicleList}', validationSuccess=\{validationSuccess}}";
     }
 }

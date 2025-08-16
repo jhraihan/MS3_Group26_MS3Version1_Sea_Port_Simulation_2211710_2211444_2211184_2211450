@@ -1,23 +1,40 @@
 package com.example.sea_port_simulation;
 
+import javafx.event.ActionEvent;
+import javafx.fxml.FXML;
+import javafx.scene.control.*;
+import javafx.scene.control.cell.PropertyValueFactory;
+
 public class DisputeReviewAcccontroller
 {
-    @javafx.fxml.FXML
-    private TableView tvTableDisputes;
-    @javafx.fxml.FXML
-    private TextField txtComments;
-    @javafx.fxml.FXML
-    private Label lblDecisionStatus;
+    @FXML private TableColumn colDispStatus;
+    @FXML private TableView tblDisputes;
+    @FXML private TextField txtComments;
+    @FXML private TableColumn colDispTxn;
+    @FXML private TableColumn colDispComment;
+    @FXML private TableColumn colDispReason;
+    @FXML private Label lblDecisionStatus;
+    @FXML private TableColumn colDispId;
 
-    @javafx.fxml.FXML
+    @FXML
     public void initialize() {
+        colDispId.setCellValueFactory(new PropertyValueFactory<>("disputeId"));
+        colDispTxn.setCellValueFactory(new PropertyValueFactory<>("transactionId"));
+        colDispReason.setCellValueFactory(new PropertyValueFactory<>("reason"));
+        colDispStatus.setCellValueFactory(new PropertyValueFactory<>("status"));
+        colDispComment.setCellValueFactory(new PropertyValueFactory<>("accountantComment"));
     }
 
-    @javafx.fxml.FXML
+    @FXML
     public void handleReject(ActionEvent actionEvent) {
+        Object sel = tblDisputes.getSelectionModel().getSelectedItem();
+        if (sel == null) { new Alert(Alert.AlertType.INFORMATION,"Select a dispute").showAndWait(); return; }
     }
 
-    @javafx.fxml.FXML
+    @FXML
     public void handleApprove(ActionEvent actionEvent) {
+        Object sel = tblDisputes.getSelectionModel().getSelectedItem();
+        if (sel == null) { new Alert(Alert.AlertType.INFORMATION,"Select a dispute").showAndWait(); return; }
+
     }
 }

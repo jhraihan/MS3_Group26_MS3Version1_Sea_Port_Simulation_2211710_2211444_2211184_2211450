@@ -23,5 +23,6 @@ public class CustomClearanceOfficer1 {
 
     @javafx.fxml.FXML
     public void addToRegButton(ActionEvent actionEvent) {
+
     }
 }
