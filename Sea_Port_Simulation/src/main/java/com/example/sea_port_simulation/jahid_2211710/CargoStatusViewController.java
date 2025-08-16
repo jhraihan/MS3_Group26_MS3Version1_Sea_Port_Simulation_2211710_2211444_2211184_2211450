@@ -9,31 +9,31 @@ import javafx.scene.control.TextField;
 public class CargoStatusViewController
 {
     @javafx.fxml.FXML
-    private TableColumn shipIDcol;
+    private TableColumn<CargoStatus,Integer> shipIDcol;
     @javafx.fxml.FXML
-    private ComboBox cargoOptcatagorycombobox;
+    private ComboBox<String> cargoOptcatagorycombobox;
     @javafx.fxml.FXML
     private TextField shipIDtextfield;
     @javafx.fxml.FXML
-    private TableColumn shipnameCol;
+    private TableColumn<CargoStatus,String> shipnameCol;
     @javafx.fxml.FXML
-    private TableColumn cargoCatagoryCol;
+    private TableColumn<CargoStatus,String> cargoCatagoryCol;
     @javafx.fxml.FXML
-    private TableColumn cargoTypecol;
+    private TableColumn<CargoStatus,String> cargoTypecol;
     @javafx.fxml.FXML
     private TextField shipNametextfield;
     @javafx.fxml.FXML
-    private ComboBox statusCombobox;
+    private ComboBox<String> statusCombobox;
     @javafx.fxml.FXML
-    private TableColumn statusCol;
+    private TableColumn<CargoStatus,String> statusCol;
     @javafx.fxml.FXML
-    private TableColumn currDockLocCOL;
+    private TableColumn<CargoStatus,String> currDockLocCOL;
     @javafx.fxml.FXML
     private TextField currentdocLocationtextfield;
     @javafx.fxml.FXML
-    private TableView cargoStatusTableview;
+    private TableView<CargoStatus> cargoStatusTableview;
     @javafx.fxml.FXML
-    private ComboBox cargoOperationTypecombobox;
+    private ComboBox<String> cargoOperationTypecombobox;
 
     @javafx.fxml.FXML
     public void initialize() {

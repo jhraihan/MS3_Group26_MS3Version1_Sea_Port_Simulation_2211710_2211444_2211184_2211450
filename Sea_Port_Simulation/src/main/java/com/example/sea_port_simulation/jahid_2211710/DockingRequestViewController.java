@@ -3,46 +3,49 @@ package com.example.sea_port_simulation.jahid_2211710;
 import javafx.event.ActionEvent;
 import javafx.scene.control.*;
 
+import javax.print.Doc;
+import java.time.LocalDate;
+
 public class DockingRequestViewController
 {
     @javafx.fxml.FXML
-    private ComboBox shipSizecombobox;
+    private ComboBox<String> shipSizecombobox;
     @javafx.fxml.FXML
-    private TableColumn shipIDcol;
+    private TableColumn<DockingRequest,Integer> shipIDcol;
     @javafx.fxml.FXML
-    private TableColumn shipSizecol;
+    private TableColumn<DockingRequest,String> shipSizecol;
     @javafx.fxml.FXML
-    private TableColumn priorityLevelcol;
+    private TableColumn<DockingRequest,String> priorityLevelcol;
     @javafx.fxml.FXML
-    private ComboBox requestedDockcombobox;
+    private ComboBox<String> requestedDockcombobox;
     @javafx.fxml.FXML
     private TextField shipIDtextfield;
     @javafx.fxml.FXML
-    private TableColumn requestedDockcol;
+    private TableColumn<DockingRequest,String> requestedDockcol;
     @javafx.fxml.FXML
-    private ComboBox priorityLevelCombobox;
+    private ComboBox<String> priorityLevelCombobox;
     @javafx.fxml.FXML
-    private ComboBox cargoTypecombobox;
+    private ComboBox<String> cargoTypecombobox;
     @javafx.fxml.FXML
-    private TableColumn shipnameCol;
+    private TableColumn<DockingRequest,String> shipnameCol;
     @javafx.fxml.FXML
-    private ComboBox etaTimeCombobox;
+    private ComboBox<LocalDate> etaTimeCombobox;
     @javafx.fxml.FXML
-    private TableColumn cargoTypecol;
+    private TableColumn<DockingRequest,String> cargoTypecol;
     @javafx.fxml.FXML
     private TextField shipNametextfield;
     @javafx.fxml.FXML
-    private TableColumn requestIDcol;
+    private TableColumn<DockingRequest,Integer> requestIDcol;
     @javafx.fxml.FXML
-    private TableView dockingRequestTableView;
+    private TableView<DockingRequest> dockingRequestTableView;
     @javafx.fxml.FXML
-    private TableColumn ETAtimeCol;
+    private TableColumn<DockingRequest,LocalDate> ETAtimeCol;
     @javafx.fxml.FXML
     private TextField requestIDtextfield;
     @javafx.fxml.FXML
     private DatePicker ETAdateDatepicker;
     @javafx.fxml.FXML
-    private TableColumn specialreqCol;
+    private TableColumn<DockingRequest,String> specialreqCol;
     @javafx.fxml.FXML
     private TextArea specialRequirementTextarea;
 
