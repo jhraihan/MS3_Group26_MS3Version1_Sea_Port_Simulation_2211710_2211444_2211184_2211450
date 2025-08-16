@@ -2,10 +2,7 @@ package com.example.sea_port_simulation;
 
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
-import javafx.scene.control.ComboBox;
-import javafx.scene.control.Label;
-import javafx.scene.control.TableColumn;
-import javafx.scene.control.TableView;
+import javafx.scene.control.*;
 import javafx.scene.control.cell.PropertyValueFactory;
 
 public class MonitorCCTVMarycontroller
@@ -30,5 +27,6 @@ public class MonitorCCTVMarycontroller
 
     @javafx.fxml.FXML
     public void btnViewLive(ActionEvent actionEvent) {
+        new Alert(Alert.AlertType.WARNING, "Live Status").showAndWait();
     }
 }

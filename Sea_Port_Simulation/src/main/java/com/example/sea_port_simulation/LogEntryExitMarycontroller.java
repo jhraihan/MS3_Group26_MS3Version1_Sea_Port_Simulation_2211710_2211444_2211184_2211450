@@ -2,10 +2,7 @@ package com.example.sea_port_simulation;
 
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
-import javafx.scene.control.Label;
-import javafx.scene.control.TableColumn;
-import javafx.scene.control.TableView;
-import javafx.scene.control.TextField;
+import javafx.scene.control.*;
 import javafx.scene.control.cell.PropertyValueFactory;
 
 public class LogEntryExitMarycontroller
@@ -33,5 +30,6 @@ public class LogEntryExitMarycontroller
 
     @javafx.fxml.FXML
     public void handleRecordEntry(ActionEvent actionEvent) {
+        new Alert(Alert.AlertType.WARNING, "Record Entry").showAndWait();
     }
 }

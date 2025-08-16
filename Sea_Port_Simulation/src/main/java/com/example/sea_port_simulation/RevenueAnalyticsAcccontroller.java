@@ -1,21 +1,43 @@
 package com.example.sea_port_simulation;
 
+import javafx.collections.FXCollections;
+import javafx.collections.ObservableList;
+import javafx.event.ActionEvent;
+import javafx.fxml.FXML;
+import javafx.scene.chart.LineChart;
+import javafx.scene.control.*;
+import javafx.scene.control.cell.PropertyValueFactory;
+
 public class RevenueAnalyticsAcccontroller
 {
-    @javafx.fxml.FXML
-    private ComboBox comboMonth;
-    @javafx.fxml.FXML
-    private ComboBox comboCategory;
-    @javafx.fxml.FXML
+    @FXML
+    private ComboBox<String> comboMonth;
+    @FXML
+    private ComboBox<String> comboCategory;
+    @FXML
     private Label lblRevenueSummary;
-    @javafx.fxml.FXML
+    @FXML
     private LineChart chartRevenue;
 
-    @javafx.fxml.FXML
+    @FXML
+    private TableView<RevenueAnalyticsAcc> tblRevenue;
+    @FXML private TableColumn<RevenueAnalyticsAcc, String> colRevMonth, colRevCat;
+    @FXML private TableColumn<RevenueAnalyticsAcc, Number> colRevAmt;
+
+    @FXML
     public void initialize() {
+        colRevMonth.setCellValueFactory(new PropertyValueFactory<>("month"));
+        colRevCat.setCellValueFactory(new PropertyValueFactory<>("category"));
+        colRevAmt.setCellValueFactory(new PropertyValueFactory<>("amount"));
+        ChoiceBox<String> categoryBox = null;
+        categoryBox.setItems(FXCollections.observableArrayList("All","Docking","Cargo","Fuel"));
+        categoryBox.setValue("All");
     }
 
-    @javafx.fxml.FXML
+    @FXML
     public void handleGenerateChart(ActionEvent actionEvent) {
+        String m = comboMonth.getValue().trim();
+        String c = comboCategory.getValue();
+        ObservableList<RevenueAnalyticsAcc> out = FXCollections.observableArrayList();
     }
 }

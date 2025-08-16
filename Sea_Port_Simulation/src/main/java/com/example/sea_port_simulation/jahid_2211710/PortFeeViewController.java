@@ -3,46 +3,48 @@ package com.example.sea_port_simulation.jahid_2211710;
 import javafx.event.ActionEvent;
 import javafx.scene.control.*;
 
+import java.time.LocalDate;
+
 public class PortFeeViewController
 {
     @javafx.fxml.FXML
-    private ComboBox feeTypeCombobox;
+    private ComboBox<String> feeTypeCombobox;
     @javafx.fxml.FXML
     private DatePicker expiryDatedatepicker;
     @javafx.fxml.FXML
-    private TableColumn vesselSizecol;
+    private TableColumn<PortFee,String> vesselSizecol;
     @javafx.fxml.FXML
-    private TableView portFeeManagementTableview;
+    private TableView<PortFee> portFeeManagementTableview;
     @javafx.fxml.FXML
-    private TableColumn rateCatagorycol;
+    private TableColumn<PortFee,String> rateCatagorycol;
     @javafx.fxml.FXML
     private TextField feeIDtextfield;
     @javafx.fxml.FXML
-    private ComboBox currencyCombobox;
+    private ComboBox<String> currencyCombobox;
     @javafx.fxml.FXML
-    private TableColumn descriptionCol;
+    private TableColumn<PortFee,String> descriptionCol;
     @javafx.fxml.FXML
     private TextArea descriptiontextArea;
     @javafx.fxml.FXML
-    private TableColumn expiryDatecol;
+    private TableColumn<PortFee, LocalDate> expiryDatecol;
     @javafx.fxml.FXML
-    private TableColumn feeIDcol;
+    private TableColumn<PortFee,Integer> feeIDcol;
     @javafx.fxml.FXML
     private TextField baseAmounttextfield;
     @javafx.fxml.FXML
-    private TableColumn effectiveDatecol;
+    private TableColumn<PortFee,LocalDate> effectiveDatecol;
     @javafx.fxml.FXML
-    private ComboBox rateCatagoryCombobox;
+    private ComboBox<String> rateCatagoryCombobox;
     @javafx.fxml.FXML
     private DatePicker effectiveDateDatepicker;
     @javafx.fxml.FXML
-    private TableColumn feeTypecol;
+    private TableColumn<PortFee,String> feeTypecol;
     @javafx.fxml.FXML
-    private TableColumn currencyCol;
+    private TableColumn<PortFee,String> currencyCol;
     @javafx.fxml.FXML
-    private TableColumn baseAmountCol;
+    private TableColumn<PortFee,String> baseAmountCol;
     @javafx.fxml.FXML
-    private ComboBox vesselSizecombobox;
+    private ComboBox<String> vesselSizecombobox;
 
     @javafx.fxml.FXML
     public void initialize() {
