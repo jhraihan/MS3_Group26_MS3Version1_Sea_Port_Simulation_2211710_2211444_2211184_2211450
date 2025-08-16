@@ -13,23 +13,23 @@ public class UpdateWeeklySummaryController
     @javafx.fxml.FXML
     private DatePicker wsStartDateDatePicker;
     @javafx.fxml.FXML
-    private TableColumn wsPilotIdCol;
+    private TableColumn<WeeklySummary, String> wsPilotIdCol;
     @javafx.fxml.FXML
-    private TableColumn wsSummaryCol;
+    private TableColumn<WeeklySummary, String> wsSummaryCol;
     @javafx.fxml.FXML
-    private TableColumn wsNumOfAssignmentCol;
+    private TableColumn<WeeklySummary, String> wsNumOfAssignmentCol;
     @javafx.fxml.FXML
     private TextField wsPilotIdTextField;
     @javafx.fxml.FXML
-    private TableColumn wsEndDateCol;
+    private TableColumn<WeeklySummary, String> wsEndDateCol;
     @javafx.fxml.FXML
     private DatePicker wsEndDateDatePicker;
     @javafx.fxml.FXML
-    private TableView wsTableView;
+    private TableView<WeeklySummary> wsTableView;
     @javafx.fxml.FXML
     private TextField wsSummaryTextField;
     @javafx.fxml.FXML
-    private TableColumn wsStartDateCol;
+    private TableColumn<WeeklySummary, String> wsStartDateCol;
 
     @javafx.fxml.FXML
     public void initialize() {

@@ -10,15 +10,15 @@ public class SetBookingController
     @javafx.fxml.FXML
     private TextField bookingReceiverNumberTextField;
     @javafx.fxml.FXML
-    private ComboBox bookingShippingCountryComboBox;
+    private ComboBox<Bookings> bookingShippingCountryComboBox;
     @javafx.fxml.FXML
     private DatePicker bookingDateDatePicker;
     @javafx.fxml.FXML
     private TextField bookingClientNameTextField;
     @javafx.fxml.FXML
-    private ComboBox bookingTypeComboBox;
+    private ComboBox<Bookings> bookingTypeComboBox;
     @javafx.fxml.FXML
-    private ComboBox bookingClientCountryComboBox;
+    private ComboBox<Bookings> bookingClientCountryComboBox;
     @javafx.fxml.FXML
     private TextField bookingWeightTextField;
     @javafx.fxml.FXML

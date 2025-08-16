@@ -11,7 +11,7 @@ public class SendMessageController
     @javafx.fxml.FXML
     private TextField messageContentTextField;
     @javafx.fxml.FXML
-    private TableColumn messageContentTableView;
+    private TableColumn<Message, String> messageContentTableView;
 
     @javafx.fxml.FXML
     public void initialize() {

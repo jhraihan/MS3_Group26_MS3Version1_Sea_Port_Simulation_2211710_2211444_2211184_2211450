@@ -8,9 +8,9 @@ public class CheckWeatherController
     @javafx.fxml.FXML
     private DatePicker weatherDatePicker;
     @javafx.fxml.FXML
-    private ComboBox weatherCheckingShiftCombobox;
+    private ComboBox<Weather> weatherCheckingShiftCombobox;
     @javafx.fxml.FXML
-    private ComboBox workingAreaForWeatherCombobox;
+    private ComboBox<Weather> workingAreaForWeatherCombobox;
 
     @javafx.fxml.FXML
     public void initialize() {

@@ -10,15 +10,15 @@ public class SendFeedbackController
     @javafx.fxml.FXML
     private TextField feedReceiverIdTextField;
     @javafx.fxml.FXML
-    private ComboBox feedFeedbackDateDatePicker;
+    private ComboBox<Feedback> feedFeedbackDateDatePicker;
     @javafx.fxml.FXML
     private TextField feedMessageTextField;
     @javafx.fxml.FXML
     private TextField feedClientIdTextField;
     @javafx.fxml.FXML
-    private ComboBox feedFeedbackTypeComboBox;
+    private ComboBox<Feedback> feedFeedbackTypeComboBox;
     @javafx.fxml.FXML
-    private TableColumn feedSeeMwssageTableView;
+    private TableColumn<Feedback, String> feedSeeMwssageTableView;
 
     @javafx.fxml.FXML
     public void initialize() {

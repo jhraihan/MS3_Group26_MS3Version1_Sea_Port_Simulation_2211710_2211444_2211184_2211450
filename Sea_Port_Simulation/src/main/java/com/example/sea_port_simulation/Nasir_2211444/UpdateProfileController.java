@@ -8,23 +8,23 @@ import javafx.scene.control.TextField;
 public class UpdateProfileController
 {
     @javafx.fxml.FXML
-    private TableView piTableView;
+    private TableView<profile> piTableView;
     @javafx.fxml.FXML
-    private TableColumn piAddressCol;
+    private TableColumn<profile, String> piAddressCol;
     @javafx.fxml.FXML
     private TextField piClientNumTextField;
     @javafx.fxml.FXML
     private TextField piEmailTextField;
     @javafx.fxml.FXML
-    private TableColumn piClientNameCol;
+    private TableColumn<profile, String> piClientNameCol;
     @javafx.fxml.FXML
-    private TableColumn piEmailCol;
+    private TableColumn<profile, String> piEmailCol;
     @javafx.fxml.FXML
     private TextField piClientNameTextField;
     @javafx.fxml.FXML
     private TextField piAddressTextField;
     @javafx.fxml.FXML
-    private TableColumn piClientNumCol;
+    private TableColumn<profile, String> piClientNumCol;
 
     @javafx.fxml.FXML
     public void initialize() {

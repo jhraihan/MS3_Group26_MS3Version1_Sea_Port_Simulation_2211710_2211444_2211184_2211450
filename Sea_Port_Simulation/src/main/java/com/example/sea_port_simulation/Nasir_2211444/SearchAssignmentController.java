@@ -12,7 +12,7 @@ public class SearchAssignmentController
     @javafx.fxml.FXML
     private DatePicker assignmentDateDatePicker;
     @javafx.fxml.FXML
-    private ComboBox assignmentWorkingZoneComboBox;
+    private ComboBox<Assignment> assignmentWorkingZoneComboBox;
 
     @javafx.fxml.FXML
     public void initialize() {

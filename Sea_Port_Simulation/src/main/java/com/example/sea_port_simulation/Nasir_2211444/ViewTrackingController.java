@@ -9,19 +9,19 @@ import javafx.scene.control.TextField;
 public class ViewTrackingController
 {
     @javafx.fxml.FXML
-    private TableColumn trackingStatusCol;
+    private TableColumn<Tracking, String> trackingStatusCol;
     @javafx.fxml.FXML
-    private TableColumn trackingShipmentIdCol;
+    private TableColumn<Tracking, String> trackingShipmentIdCol;
     @javafx.fxml.FXML
     private TextField trackingShipmentIdTextField;
     @javafx.fxml.FXML
     private TextField trackingIdTextField;
     @javafx.fxml.FXML
-    private TableColumn trackingIdCol;
+    private TableColumn<Tracking, String> trackingIdCol;
     @javafx.fxml.FXML
-    private ComboBox trackingStatusComboBox;
+    private ComboBox<Tracking> trackingStatusComboBox;
     @javafx.fxml.FXML
-    private TableView trackingTableView;
+    private TableView<Tracking> trackingTableView;
 
     @javafx.fxml.FXML
     public void initialize() {

@@ -8,19 +8,19 @@ public class TaskUpdateController
     @javafx.fxml.FXML
     private DatePicker utDatePicker;
     @javafx.fxml.FXML
-    private TableColumn utPilotIdCol;
+    private TableColumn<UpdateTask, String> utPilotIdCol;
     @javafx.fxml.FXML
-    private ComboBox utStatusComboBox;
+    private ComboBox<UpdateTask> utStatusComboBox;
     @javafx.fxml.FXML
-    private TableColumn utStatusCol;
+    private TableColumn<UpdateTask, String> utStatusCol;
     @javafx.fxml.FXML
     private TextField utPilotIdTextField;
     @javafx.fxml.FXML
-    private TableView utTableView;
+    private TableView<UpdateTask> utTableView;
     @javafx.fxml.FXML
-    private TableColumn utShipIdCol;
+    private TableColumn<UpdateTask, String> utShipIdCol;
     @javafx.fxml.FXML
-    private TableColumn utDateCol;
+    private TableColumn<UpdateTask, String> utDateCol;
     @javafx.fxml.FXML
     private TextField utShipIdTextField;
 

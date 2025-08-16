@@ -13,15 +13,15 @@ public class RequestTugboatController
     @javafx.fxml.FXML
     private DatePicker tsDateDatePicker;
     @javafx.fxml.FXML
-    private TableColumn taTugboatIdCol;
+    private TableColumn<TugboatAssistance,String> taTugboatIdCol;
     @javafx.fxml.FXML
-    private TableColumn taDateCol;
+    private TableColumn<TugboatAssistance,String> taDateCol;
     @javafx.fxml.FXML
     private TextField taTugboatIdTextField;
     @javafx.fxml.FXML
-    private TableView taTableView;
+    private TableView<TugboatAssistance> taTableView;
     @javafx.fxml.FXML
-    private TableColumn taPilotIdCol;
+    private TableColumn<TugboatAssistance,String> taPilotIdCol;
 
     @javafx.fxml.FXML
     public void initialize() {

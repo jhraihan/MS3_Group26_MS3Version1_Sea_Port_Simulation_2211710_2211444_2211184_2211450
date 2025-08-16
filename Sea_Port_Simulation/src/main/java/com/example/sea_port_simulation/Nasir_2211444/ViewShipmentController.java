@@ -12,11 +12,11 @@ public class ViewShipmentController
     @javafx.fxml.FXML
     private TextField siClientIdTextField;
     @javafx.fxml.FXML
-    private TableView siTableView;
+    private TableView<Shipment> siTableView;
     @javafx.fxml.FXML
-    private TableColumn siShippingIdCol;
+    private TableColumn<Shipment, String> siShippingIdCol;
     @javafx.fxml.FXML
-    private TableColumn siClientIdCol;
+    private TableColumn<Shipment, String> siClientIdCol;
 
     @javafx.fxml.FXML
     public void initialize() {

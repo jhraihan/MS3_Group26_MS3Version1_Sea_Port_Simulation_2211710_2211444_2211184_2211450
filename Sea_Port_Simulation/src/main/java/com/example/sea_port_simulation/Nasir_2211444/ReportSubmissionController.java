@@ -9,17 +9,17 @@ import javafx.scene.control.TextField;
 public class ReportSubmissionController
 {
     @javafx.fxml.FXML
-    private TableColumn rsDateCol;
+    private TableColumn<SubmitReport, String> rsDateCol;
     @javafx.fxml.FXML
-    private TableView rsTableView;
+    private TableView<SubmitReport> rsTableView;
     @javafx.fxml.FXML
     private DatePicker rsSubmissionDateDatePicker;
     @javafx.fxml.FXML
     private TextField rsReportTextField;
     @javafx.fxml.FXML
-    private TableColumn rsPilotIdCol;
+    private TableColumn<SubmitReport, String> rsPilotIdCol;
     @javafx.fxml.FXML
-    private TableColumn rsReportCol;
+    private TableColumn<SubmitReport, String> rsReportCol;
     @javafx.fxml.FXML
     private TextField rsPilotIdTextField;
 

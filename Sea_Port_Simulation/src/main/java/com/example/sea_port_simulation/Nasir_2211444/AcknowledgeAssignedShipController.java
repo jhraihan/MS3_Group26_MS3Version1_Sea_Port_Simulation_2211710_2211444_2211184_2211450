@@ -10,17 +10,17 @@ public class AcknowledgeAssignedShipController
     @javafx.fxml.FXML
     private TextField captainIDTextField;
     @javafx.fxml.FXML
-    private TableColumn acknowledgeMessageCol;
+    private TableColumn<AcknowledgeShip, String> acknowledgeMessageCol;
     @javafx.fxml.FXML
-    private TableColumn shipNumberCol;
+    private TableColumn<AcknowledgeShip, String> shipNumberCol;
     @javafx.fxml.FXML
     private TextField typeAcknowledgeMessageTextField;
     @javafx.fxml.FXML
     private TextField shipNumberTextField;
     @javafx.fxml.FXML
-    private TableColumn shipCaptainIdCol;
+    private TableColumn<AcknowledgeShip, String> shipCaptainIdCol;
     @javafx.fxml.FXML
-    private TableView acknowledgeShipTableView;
+    private TableView<AcknowledgeShip> acknowledgeShipTableView;
 
     @javafx.fxml.FXML
     public void initialize() {
