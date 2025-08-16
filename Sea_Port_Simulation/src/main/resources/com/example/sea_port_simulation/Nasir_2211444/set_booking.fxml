@@ -4,34 +4,48 @@
 <?import javafx.scene.control.ComboBox?>
 <?import javafx.scene.control.DatePicker?>
 <?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-<AnchorPane prefHeight="348.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/24.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.sea_port_simulation.Nasir_2211444.SetBookingController">
+<AnchorPane prefHeight="565.0" prefWidth="771.0" xmlns="http://javafx.com/javafx/24.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.sea_port_simulation.Nasir_2211444.SetBookingController">
    <children>
-      <Text layoutX="269.0" layoutY="40.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Booking">
+      <Text layoutX="359.0" layoutY="40.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Booking">
          <font>
             <Font size="17.0" />
          </font>
       </Text>
-      <Label layoutX="329.0" layoutY="83.0" text="Booking Date :" />
-      <Label layoutX="329.0" layoutY="133.0" text="Booking Type :" />
-      <Label layoutX="329.0" layoutY="178.0" text="Shipping Country :" />
-      <DatePicker fx:id="bookingDateDatePicker" layoutX="408.0" layoutY="79.0" />
-      <ComboBox fx:id="bookingTypeComboBox" layoutX="420.0" layoutY="129.0" prefWidth="150.0" />
-      <ComboBox fx:id="bookingShippingCountryComboBox" layoutX="435.0" layoutY="174.0" prefWidth="150.0" />
-      <Label layoutX="24.0" layoutY="83.0" text="Client Name :" />
-      <TextField fx:id="bookingClientNameTextField" layoutX="106.0" layoutY="79.0" />
-      <Label layoutX="24.0" layoutY="133.0" text="Client ID :" />
-      <TextField fx:id="bookingClientIdTextField" layoutX="82.0" layoutY="129.0" />
-      <Label layoutX="24.0" layoutY="178.0" text="Client Country :" />
-      <ComboBox fx:id="bookingClientCountryComboBox" layoutX="118.0" layoutY="174.0" prefWidth="150.0" />
-      <Label layoutX="24.0" layoutY="220.0" text="Weight :" />
-      <TextField fx:id="bookingWeightTextField" layoutX="75.0" layoutY="216.0" />
-      <Button layoutX="464.0" layoutY="286.0" mnemonicParsing="false" onAction="#bookingConfirmOAButton" text="Confirm Booking" />
-      <Label layoutX="331.0" layoutY="229.0" text="Receiver Number :" />
-      <TextField fx:id="bookingReceiverNumberTextField" layoutX="435.0" layoutY="225.0" />
+      <Label layoutX="419.0" layoutY="83.0" text="Booking Date :" />
+      <Label layoutX="419.0" layoutY="133.0" text="Booking Type :" />
+      <Label layoutX="419.0" layoutY="178.0" text="Shipping Country :" />
+      <DatePicker fx:id="bookingDateDatePicker" layoutX="498.0" layoutY="79.0" />
+      <ComboBox fx:id="bookingTypeComboBox" layoutX="510.0" layoutY="129.0" prefWidth="150.0" />
+      <ComboBox fx:id="bookingShippingCountryComboBox" layoutX="525.0" layoutY="174.0" prefWidth="150.0" />
+      <Label layoutX="114.0" layoutY="83.0" text="Client Name :" />
+      <TextField fx:id="bookingClientNameTextField" layoutX="196.0" layoutY="79.0" />
+      <Label layoutX="114.0" layoutY="133.0" text="Client ID :" />
+      <TextField fx:id="bookingClientIdTextField" layoutX="172.0" layoutY="129.0" />
+      <Label layoutX="114.0" layoutY="178.0" text="Client Country :" />
+      <ComboBox fx:id="bookingClientCountryComboBox" layoutX="208.0" layoutY="174.0" prefWidth="150.0" />
+      <Label layoutX="114.0" layoutY="220.0" text="Weight :" />
+      <TextField fx:id="bookingWeightTextField" layoutX="165.0" layoutY="216.0" />
+      <Button layoutX="554.0" layoutY="286.0" mnemonicParsing="false" onAction="#bookingConfirmOAButton" text="Confirm Booking" />
+      <Label layoutX="421.0" layoutY="229.0" text="Receiver Number :" />
+      <TextField fx:id="bookingReceiverNumberTextField" layoutX="525.0" layoutY="225.0" />
+      <TableView fx:id="bookingTableView" layoutY="351.0" prefHeight="200.0" prefWidth="775.0">
+        <columns>
+          <TableColumn fx:id="bookingClientNameCol" prefWidth="78.4000244140625" text="Client Name " />
+          <TableColumn fx:id="bookingClientIdCol" prefWidth="64.79998779296875" text="Client ID " />
+            <TableColumn fx:id="bookingClientCountryCol" prefWidth="92.0" text="Client Country" />
+            <TableColumn fx:id="bookingWeightCol" prefWidth="69.60003662109375" text="Weight" />
+            <TableColumn fx:id="bookingBookingDateCol" prefWidth="102.4000244140625" text="Booking Date" />
+            <TableColumn fx:id="bookingBookingTypeCol" prefWidth="112.0" text="Booking Type" />
+            <TableColumn fx:id="bookingShippingCountryCol" prefWidth="120.0" text="Shipping Country" />
+            <TableColumn fx:id="bookingReceiverNumberCol" prefWidth="140.7999267578125" text="Receiver Number" />
+        </columns>
+      </TableView>
    </children>
 </AnchorPane>

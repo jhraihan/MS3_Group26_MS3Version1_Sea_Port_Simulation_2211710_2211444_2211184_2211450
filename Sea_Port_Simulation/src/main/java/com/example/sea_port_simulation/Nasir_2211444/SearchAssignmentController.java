@@ -1,9 +1,7 @@
 package com.example.sea_port_simulation.Nasir_2211444;
 
 import javafx.event.ActionEvent;
-import javafx.scene.control.ComboBox;
-import javafx.scene.control.DatePicker;
-import javafx.scene.control.TextField;
+import javafx.scene.control.*;
 
 public class SearchAssignmentController
 {
@@ -13,6 +11,14 @@ public class SearchAssignmentController
     private DatePicker assignmentDateDatePicker;
     @javafx.fxml.FXML
     private ComboBox<Assignment> assignmentWorkingZoneComboBox;
+    @javafx.fxml.FXML
+    private TableView<Assignment> assignmentTableView;
+    @javafx.fxml.FXML
+    private TableColumn<Assignment, String> assignmentPilotIdCol;
+    @javafx.fxml.FXML
+    private TableColumn<Assignment, String> assignmentWorkingZoneCol;
+    @javafx.fxml.FXML
+    private TableColumn<Assignment, String> assignmentDateCol;
 
     @javafx.fxml.FXML
     public void initialize() {
