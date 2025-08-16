@@ -38,9 +38,20 @@ public class CustomClearanceOfficer5 {
 
     @javafx.fxml.FXML
     public void GenerateSummaryButton(ActionEvent actionEvent) {
+        String CargoId=CargoIdTextField.getText();
+        LocalDate Date=DateD.getValue();
+        String Status=StatusTextArea.getText();
+        String ClientName=ClientNameTextField.getText();
+
+
     }
 
     @javafx.fxml.FXML
     public void SavePdfButton(ActionEvent actionEvent) {
+        String CargoId=CargoIdTextField.getText();
+        LocalDate Date=DateD.getValue();
+        String Status=StatusTextArea.getText();
+        String ClientName=ClientNameTextField.getText();
+
     }
 }

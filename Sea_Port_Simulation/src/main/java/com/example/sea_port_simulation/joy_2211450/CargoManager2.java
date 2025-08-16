@@ -13,7 +13,7 @@ public class CargoManager2 {
     @javafx.fxml.FXML
     private TextField CargoIdTextField;
     @javafx.fxml.FXML
-    private ComboBox CargoTypeComboBox;
+    private ComboBox<String> CargoTypeComboBox;
     @javafx.fxml.FXML
     private DatePicker DepartureDateP;
     @javafx.fxml.FXML

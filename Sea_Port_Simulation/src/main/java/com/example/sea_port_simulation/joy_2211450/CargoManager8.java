@@ -28,11 +28,15 @@ public class CargoManager8 {
         StatusChoiceBoxCol.setCellValueFactory(new PropertyValueFactory<>("Status"));
         EnterRemarkCol .setCellValueFactory(new PropertyValueFactory<>("EnterRemark"));
 
+        StatusChoiceBox.getItems().addAll("Lost","Damaged");
 
     }
 
-
     @javafx.fxml.FXML
     public void UpdateButton(ActionEvent actionEvent) {
+        String CargoId=CargoIdTextField.getText();
+        String Status=StatusChoiceBox.getValue();
+        String EnterRemark=EnterRemarkTextArea.getText();
+
     }
 }

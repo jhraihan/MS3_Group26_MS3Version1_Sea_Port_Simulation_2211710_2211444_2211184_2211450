@@ -11,7 +11,7 @@ public class CustomClearanceOfficer8 {
     @javafx.fxml.FXML
     private TextField OfficerIdTextField;
     @javafx.fxml.FXML
-    private ComboBox CargoStatusComboBox;
+    private ComboBox <String>CargoStatusComboBox;
     @javafx.fxml.FXML
     private TextField OfficerNameTextField;
     @javafx.fxml.FXML

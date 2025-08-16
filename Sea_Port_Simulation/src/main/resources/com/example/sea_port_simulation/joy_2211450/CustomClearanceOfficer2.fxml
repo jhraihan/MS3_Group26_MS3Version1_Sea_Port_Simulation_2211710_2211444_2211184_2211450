@@ -4,11 +4,13 @@
 <?import javafx.scene.control.ComboBox?>
 <?import javafx.scene.control.DatePicker?>
 <?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane prefHeight="468.0" prefWidth="743.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.sea_port_simulation.joy_2211450.CustomClearanceOfficer2">
+<AnchorPane prefHeight="579.0" prefWidth="743.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.sea_port_simulation.joy_2211450.CustomClearanceOfficer2">
    <children>
       <Label layoutX="294.0" layoutY="21.0" prefHeight="18.0" prefWidth="208.0" text="Verify cargo documents">
          <font>
@@ -21,29 +23,38 @@
       <TextField fx:id="cargoIdTextField" layoutX="125.0" layoutY="112.0" />
       <TextField fx:id="CargoNameTextField" layoutX="125.0" layoutY="159.0" />
       <DatePicker fx:id="ShipingTimeDate" layoutX="125.0" layoutY="222.0" />
-      <Button layoutX="563.0" layoutY="276.0" mnemonicParsing="false" onAction="#uploadButton" text="Upload">
+      <Button layoutX="548.0" layoutY="525.0" mnemonicParsing="false" onAction="#uploadButton" text="Upload">
          <font>
             <Font size="18.0" />
          </font></Button>
-      <Label fx:id="ConfiramitonMessegeLable" layoutX="84.0" layoutY="316.0" prefHeight="18.0" prefWidth="231.0" text="ConfiramationMessege" />
-      <Button layoutX="574.0" layoutY="393.0" mnemonicParsing="false" onAction="#SaveButton" text="Save">
+      <Label fx:id="ConfiramitonMessegeLable" layoutX="115.0" layoutY="523.0" prefHeight="18.0" prefWidth="231.0" text="ConfiramationMessege" />
+      <Button layoutX="656.0" layoutY="525.0" mnemonicParsing="false" onAction="#SaveButton" text="Save">
          <font>
             <Font size="18.0" />
          </font>
       </Button>
-      <Button layoutX="280.0" layoutY="305.0" mnemonicParsing="false" onAction="#VerifyButton" text="Verify">
+      <Button layoutX="383.0" layoutY="525.0" mnemonicParsing="false" onAction="#VerifyButton" text="Verify">
          <font>
             <Font size="18.0" />
          </font>
       </Button>
       <Label layoutX="426.0" layoutY="99.0" text="Shipment Type" />
       <ComboBox fx:id="ShipmentTypeComboBox" layoutX="556.0" layoutY="99.0" prefWidth="150.0" />
-      <Button layoutX="32.0" layoutY="406.0" mnemonicParsing="false" onAction="#ResetButton" text="Reset">
+      <Button layoutX="21.0" layoutY="513.0" mnemonicParsing="false" onAction="#ResetButton" text="Reset">
          <font>
             <Font size="18.0" />
          </font>
       </Button>
       <TextField fx:id="HsCodeTextField" layoutX="537.0" layoutY="190.0" />
       <Label layoutX="443.0" layoutY="194.0" text="HS Code" />
+      <TableView fx:id="TableView" layoutX="63.0" layoutY="274.0" prefHeight="223.0" prefWidth="639.0">
+        <columns>
+          <TableColumn fx:id="CargoIdCol" prefWidth="111.19997787475586" text="CargoId" />
+          <TableColumn fx:id="CargoNameCol" prefWidth="84.00001525878906" text="CargoName" />
+            <TableColumn fx:id="ShipingTimeCol" prefWidth="143.2000274658203" text="ShipingTime" />
+            <TableColumn fx:id="ShipmentTypeCol" prefWidth="152.79998779296875" text="ShipmentType" />
+            <TableColumn fx:id="HsCodeCol" prefWidth="148.79998779296875" text="HsCode" />
+        </columns>
+      </TableView>
    </children>
 </AnchorPane>
