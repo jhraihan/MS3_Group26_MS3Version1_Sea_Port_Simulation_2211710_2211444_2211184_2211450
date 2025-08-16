@@ -3,18 +3,18 @@ package com.example.sea_port_simulation.jahid_2211710;
 import java.time.LocalDate;
 
 public class CargoEfficiency {
-    private int efficiencyID,shipID;
-    private String cargoType,delayReason,targetEfficiency,ActualEfficiency,delay;
-    private LocalDate startTime,endTime;
+    private int efficiencyID, shipID;
+    private String cargoType, delayReason, delay, targetEfficiency, actualEfficiency;
+    private LocalDate startTime, endTime;
 
-    public CargoEfficiency(int efficiencyID, int shipID, String cargoType, String delayReason, String targetEfficiency, String actualEfficiency, String delay, LocalDate startTime, LocalDate endTime) {
+    public CargoEfficiency(int efficiencyID, int shipID, String cargoType, String delayReason, String delay, String targetEfficiency, String actualEfficiency, LocalDate startTime, LocalDate endTime) {
         this.efficiencyID = efficiencyID;
         this.shipID = shipID;
         this.cargoType = cargoType;
         this.delayReason = delayReason;
-        this.targetEfficiency = targetEfficiency;
-        ActualEfficiency = actualEfficiency;
         this.delay = delay;
+        this.targetEfficiency = targetEfficiency;
+        this.actualEfficiency = actualEfficiency;
         this.startTime = startTime;
         this.endTime = endTime;
     }
@@ -51,6 +51,14 @@ public class CargoEfficiency {
         this.delayReason = delayReason;
     }
 
+    public String getDelay() {
+        return delay;
+    }
+
+    public void setDelay(String delay) {
+        this.delay = delay;
+    }
+
     public String getTargetEfficiency() {
         return targetEfficiency;
     }
@@ -60,19 +68,11 @@ public class CargoEfficiency {
     }
 
     public String getActualEfficiency() {
-        return ActualEfficiency;
+        return actualEfficiency;
     }
 
     public void setActualEfficiency(String actualEfficiency) {
-        ActualEfficiency = actualEfficiency;
-    }
-
-    public String getDelay() {
-        return delay;
-    }
-
-    public void setDelay(String delay) {
-        this.delay = delay;
+        this.actualEfficiency = actualEfficiency;
     }
 
     public LocalDate getStartTime() {
@@ -98,11 +98,12 @@ public class CargoEfficiency {
                 ", shipID=" + shipID +
                 ", cargoType='" + cargoType + '\'' +
                 ", delayReason='" + delayReason + '\'' +
-                ", targetEfficiency='" + targetEfficiency + '\'' +
-                ", ActualEfficiency='" + ActualEfficiency + '\'' +
                 ", delay='" + delay + '\'' +
+                ", targetEfficiency='" + targetEfficiency + '\'' +
+                ", actualEfficiency='" + actualEfficiency + '\'' +
                 ", startTime=" + startTime +
                 ", endTime=" + endTime +
                 '}';
     }
 }
+

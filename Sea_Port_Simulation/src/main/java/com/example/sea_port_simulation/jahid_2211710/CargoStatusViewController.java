@@ -5,6 +5,9 @@ import javafx.scene.control.ComboBox;
 import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
 import javafx.scene.control.TextField;
+import javafx.scene.control.cell.PropertyValueFactory;
+
+import java.util.ArrayList;
 
 public class CargoStatusViewController
 {
@@ -34,12 +37,35 @@ public class CargoStatusViewController
     private TableView<CargoStatus> cargoStatusTableview;
     @javafx.fxml.FXML
     private ComboBox<String> cargoOperationTypecombobox;
+    ArrayList<CargoStatus> statuslist = new ArrayList<>();
 
     @javafx.fxml.FXML
     public void initialize() {
+        currDockLocCOL.setCellValueFactory(new PropertyValueFactory<>("currentDockLocation"));
+        statusCol.setCellValueFactory(new PropertyValueFactory<>("statusSelection"));
+        cargoTypecol.setCellValueFactory(new PropertyValueFactory<>("cargoOperationType"));
+        cargoCatagoryCol.setCellValueFactory(new PropertyValueFactory<>("cargoCatagory"));
+        shipnameCol.setCellValueFactory(new PropertyValueFactory<>("shipName"));
+        shipIDcol.setCellValueFactory(new PropertyValueFactory<>("shipID"));
+
+        cargoOperationTypecombobox.getItems().addAll("Loading", "Unloading", "Transfer", "Inspection", "Emergency Handling");
+        statusCombobox.getItems().addAll("Not Started", "In Progress", "Paused", "Completed", "Delayed", "Cancelled");
+        cargoOptcatagorycombobox.getItems().addAll("Container", "Bulk Dry", "Liquid", "Refrigerated", "Hazardous", "Oversized", "Livestock");
+
     }
 
     @javafx.fxml.FXML
     public void viewCargoButtonOnAction(ActionEvent actionEvent) {
+        CargoStatus st1 = new CargoStatus(
+                Integer.parseInt(shipIDtextfield.getText()),
+                currentdocLocationtextfield.getText(),
+                shipNametextfield.getText(),
+                cargoOperationTypecombobox.getValue(),
+                cargoOptcatagorycombobox.getValue(),
+                statusCombobox.getValue()
+        );
+        statuslist.add(st1);
+        cargoStatusTableview.getItems().clear();
+        cargoStatusTableview.getItems().addAll(st1);
     }
 }

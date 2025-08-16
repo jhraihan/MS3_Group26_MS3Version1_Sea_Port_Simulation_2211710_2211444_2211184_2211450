@@ -3,14 +3,13 @@ package com.example.sea_port_simulation.jahid_2211710;
 import java.time.LocalDate;
 
 public class AuditLog {
-    private int logID,userID,entityID;
+    private int logID,userID;
     private String userrole,actionType,status,search,entityType;
     private LocalDate startDate,endDate;
 
     public AuditLog(int logID, int userID, int entityID, String userrole, String actionType, String status, String search, String entityType, LocalDate startDate, LocalDate endDate) {
         this.logID = logID;
         this.userID = userID;
-        this.entityID = entityID;
         this.userrole = userrole;
         this.actionType = actionType;
         this.status = status;
@@ -34,14 +33,6 @@ public class AuditLog {
 
     public void setUserID(int userID) {
         this.userID = userID;
-    }
-
-    public int getEntityID() {
-        return entityID;
-    }
-
-    public void setEntityID(int entityID) {
-        this.entityID = entityID;
     }
 
     public String getUserrole() {
@@ -105,7 +96,6 @@ public class AuditLog {
         return "AuditLog{" +
                 "logID=" + logID +
                 ", userID=" + userID +
-                ", entityID=" + entityID +
                 ", userrole='" + userrole + '\'' +
                 ", actionType='" + actionType + '\'' +
                 ", status='" + status + '\'' +

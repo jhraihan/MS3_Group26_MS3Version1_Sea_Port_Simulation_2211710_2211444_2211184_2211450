@@ -2,8 +2,10 @@ package com.example.sea_port_simulation.jahid_2211710;
 
 import javafx.event.ActionEvent;
 import javafx.scene.control.*;
+import javafx.scene.control.cell.PropertyValueFactory;
 
 import java.time.LocalDate;
+import java.util.ArrayList;
 import java.util.Locale;
 
 public class AuditLogViewController
@@ -42,13 +44,30 @@ public class AuditLogViewController
     private TableColumn<AuditLog,Integer> logIDcol;
     @javafx.fxml.FXML
     private ComboBox<String> userRolecombobox;
+    ArrayList<AuditLog> auditList = new ArrayList<>();
 
     @javafx.fxml.FXML
     public void initialize() {
+        endDatecol.setCellValueFactory(new PropertyValueFactory<>("endDate"));
+        searchcol.setCellValueFactory(new PropertyValueFactory<>("search"));
+        userIDcol.setCellValueFactory(new PropertyValueFactory<>("userID"));
+        userRolecol.setCellValueFactory(new PropertyValueFactory<>("userrole"));
+        startDatecol.setCellValueFactory(new PropertyValueFactory<>("startDate"));
+        entityTypecol.setCellValueFactory(new PropertyValueFactory<>("entityType"));
+        actionTypeCol.setCellValueFactory(new PropertyValueFactory<>("actionType"));
+        logIDcol.setCellValueFactory(new PropertyValueFactory<>("logID"));
+
+        userRolecombobox.getItems().addAll("All", "Port Admin", "Ship Captain", "Customs Officer", "Security");
+        entityTypecombobox.getItems().addAll("All", "Info", "Warning", "Critical");
+        actionTypecombobox.getItems().addAll("All", "Login", "Data Change", "Ship Movement", "Security Alert");
+
+
+
     }
 
     @javafx.fxml.FXML
     public void applyFilterButtonOnAction(ActionEvent actionEvent) {
+
     }
 
     @javafx.fxml.FXML
